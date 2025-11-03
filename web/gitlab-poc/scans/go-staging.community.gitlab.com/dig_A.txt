@@ -1,0 +1,2 @@
+>>> dig A @8.8.8.8
+go-staging.community.gitlab.com. 300 IN	A	35.202.109.25

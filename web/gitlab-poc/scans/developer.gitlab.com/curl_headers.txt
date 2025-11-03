@@ -1,0 +1,78 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host developer.gitlab.com:443 was resolved.
+* IPv6: 2600:1901:0:7b8a::
+* IPv4: 35.185.44.232
+*   Trying [2600:1901:0:7b8a::]:443...
+* Immediate connect fail for 2600:1901:0:7b8a::: Network is unreachable
+*   Trying 35.185.44.232:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1699 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [21 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2854 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [520 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / x25519 / RSASSA-PSS
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=developer.gitlab.com
+*  start date: Jul 14 22:33:00 2025 GMT
+*  expire date: Oct 12 22:32:59 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=R10
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type RSA (4096/152 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to developer.gitlab.com (35.185.44.232) port 443
+* using HTTP/1.x
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: developer.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [122 bytes data]
+* Request completely sent off
+{ [5 bytes data]
+< HTTP/1.1 200 OK
+< Cache-Control: max-age=600
+< Content-Length: 9515
+< Content-Type: text/html; charset=utf-8
+< Etag: "b743ee6cab29471656ecaca745a18d280814bcf69b127ff9c6da79ae3f5e1b7a"
+< Expires: Fri, 12 Sep 2025 14:53:16 UTC
+< Last-Modified: Thu, 27 Mar 2025 12:22:01 GMT
+< Permissions-Policy: interest-cohort=()
+< Vary: Origin
+< X-Request-Id: 01K4Z62TWPX13XYHVERM5PHGDA
+< Date: Fri, 12 Sep 2025 14:43:16 GMT
+< 
+  0  9515    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host developer.gitlab.com left intact
+HTTP/1.1 200 OK
+Cache-Control: max-age=600
+Content-Length: 9515
+Content-Type: text/html; charset=utf-8
+Etag: "b743ee6cab29471656ecaca745a18d280814bcf69b127ff9c6da79ae3f5e1b7a"
+Expires: Fri, 12 Sep 2025 14:53:16 UTC
+Last-Modified: Thu, 27 Mar 2025 12:22:01 GMT
+Permissions-Policy: interest-cohort=()
+Vary: Origin
+X-Request-Id: 01K4Z62TWPX13XYHVERM5PHGDA
+Date: Fri, 12 Sep 2025 14:43:16 GMT
+

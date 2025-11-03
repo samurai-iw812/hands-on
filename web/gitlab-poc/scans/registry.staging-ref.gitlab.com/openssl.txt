@@ -1,0 +1,73 @@
+>>> openssl s_client -servername
+Connecting to 34.75.81.247
+depth=2 C=US, O=Internet Security Research Group, CN=ISRG Root X1
+verify return:1
+depth=1 C=US, O=Let's Encrypt, CN=R12
+verify return:1
+depth=0 CN=registry.staging-ref.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=registry.staging-ref.gitlab.com
+   i:C=US, O=Let's Encrypt, CN=R12
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Aug 22 12:35:42 2025 GMT; NotAfter: Nov 20 12:35:41 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=R12
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIFGjCCBAKgAwIBAgISBVsrM6SgzX0kdPO/kbNdvbhCMA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTIwHhcNMjUwODIyMTIzNTQyWhcNMjUxMTIwMTIzNTQxWjAqMSgwJgYDVQQD
+Ex9yZWdpc3RyeS5zdGFnaW5nLXJlZi5naXRsYWIuY29tMIIBIjANBgkqhkiG9w0B
+AQEFAAOCAQ8AMIIBCgKCAQEA0OvdgeZrxCKUmKuRcWMP8ftVulhE8Z+LqS0r1IXf
+KfZwlCWD3Kk9zmTfQOX4Ikg3W8RVSnCSRhHNA6z6L+pksc/AkEEGVi8DGtT6YBR/
+92c7JGh3l9MwhPQy13Rc74OhpU7tNlYbFFm8Wsk/Vzhx8fbZYK6sQDjWqpxtT3ql
+W6iSkLM/XhrdXukc7azJE7641QwNKrI6SBpn9364F7eZy0deL8cnyc81zoeLY2mk
+91bPM1d+wd8+63hJ3ttFRoKOqOUj5RHHF0aMpBtC1CroWKBpmEVCNFLcTmYhC663
+Ki5gzWe/84uccdObi288WVDVCryV/46eKau0Xqd8IyeaNwIDAQABo4ICLzCCAisw
+DgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAM
+BgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQtbcZqhmRDCjm+gwir7Pht/seQUjAfBgNV
+HSMEGDAWgBQAtSnyLY5vMeibTK14Pvrc6QzR0jAzBggrBgEFBQcBAQQnMCUwIwYI
+KwYBBQUHMAKGF2h0dHA6Ly9yMTIuaS5sZW5jci5vcmcvMCoGA1UdEQQjMCGCH3Jl
+Z2lzdHJ5LnN0YWdpbmctcmVmLmdpdGxhYi5jb20wEwYDVR0gBAwwCjAIBgZngQwB
+AgEwLgYDVR0fBCcwJTAjoCGgH4YdaHR0cDovL3IxMi5jLmxlbmNyLm9yZy82Ny5j
+cmwwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgDd3Mo0ldfhFgXnlTL6x5/4PRxQ
+39sAOhQSdgosrLvIKgAAAZjR/Ka4AAAEAwBHMEUCIEOpeOD6tRBUfrOJw2BsBcAD
+0g1DwraRkeowbfcZoSdcAiEA82F0YnksduKq8toNo65JChkcZKaombgSi3qfN0se
+PMYAdgCvGBoo1oyj4KmKTJxnqwn4u7wiuq68sTijoZ3T+bYDDQAAAZjR/KdWAAAE
+AwBHMEUCIFAOulzsqRnVCsd8CfsP4wAPBlicl7SpuhsNLrOLVHTRAiEAuFq6V1Qf
+w7G6MjFWes8opq/moLkEsBkr8Liht5XFkDkwDQYJKoZIhvcNAQELBQADggEBAEZj
+1Cw1KIWxf+xa7EFOMmDtp1mbkSG4Niqt3hzbSdEjFE8DyNfe0tJC3wO0wjaRcWpT
+56xIcmTizWJo4k12sO45OjxxPxn5eChYloxIHx+A2vDCOu73AXRJ4O31uKgGPt59
+QljFrj4bTagV+JvzqpDQDaNOfUhUACtP0ENDYweYBx7p7bxsgmYG7SspJ9Px+aDW
+/a3AScIWJRzckHImOluaqFq2H35D62iwXHDkApClbGKXZ2nNc3jQGwf1rFJo/NwT
+Sk2+ypsB4b7viRiw7ODmVMw4TyIT5jFEY6rhcOwOy5dDYCOZL/Ct/Yu/hWEUj8pj
+Y32rz1CdVvwlI6GFy0E=
+-----END CERTIFICATE-----
+subject=CN=registry.staging-ref.gitlab.com
+issuer=C=US, O=Let's Encrypt, CN=R12
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: rsa_pss_rsae_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3165 bytes and written 1780 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE

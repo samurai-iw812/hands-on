@@ -1,0 +1,8 @@
+>>> dig A @8.8.8.8
+page.gitlab.com.	300	IN	CNAME	gitlab.mktoweb.com.
+gitlab.mktoweb.com.	247	IN	CNAME	ab13.mktossl.com.
+ab13.mktossl.com.	300	IN	A	104.17.71.206
+ab13.mktossl.com.	300	IN	A	104.17.70.206
+ab13.mktossl.com.	300	IN	A	104.17.72.206
+ab13.mktossl.com.	300	IN	A	104.17.74.206
+ab13.mktossl.com.	300	IN	A	104.17.73.206

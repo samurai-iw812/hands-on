@@ -1,0 +1,2 @@
+>>> dig A @8.8.8.8
+staging.gitlab.com.	300	IN	A	172.65.216.50

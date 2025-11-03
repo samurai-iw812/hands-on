@@ -1,0 +1,69 @@
+>>> openssl s_client -servername
+Connecting to 104.26.6.121
+depth=2 C=US, O=Google Trust Services LLC, CN=GTS Root R4
+verify return:1
+depth=1 C=US, O=Google Trust Services, CN=WE1
+verify return:1
+depth=0 CN=www.shop.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=www.shop.gitlab.com
+   i:C=US, O=Google Trust Services, CN=WE1
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Aug  5 04:33:44 2025 GMT; NotAfter: Nov  3 05:33:37 2025 GMT
+ 1 s:C=US, O=Google Trust Services, CN=WE1
+   i:C=US, O=Google Trust Services LLC, CN=GTS Root R4
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Dec 13 09:00:00 2023 GMT; NotAfter: Feb 20 14:00:00 2029 GMT
+ 2 s:C=US, O=Google Trust Services LLC, CN=GTS Root R4
+   i:C=BE, O=GlobalSign nv-sa, OU=Root CA, CN=GlobalSign Root CA
+   a:PKEY: EC, (secp384r1); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Nov 15 03:43:21 2023 GMT; NotAfter: Jan 28 00:00:42 2028 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDpzCCA0ygAwIBAgIQOUfIHuvc5VkTZHHMNgA+RTAKBggqhkjOPQQDAjA7MQsw
+CQYDVQQGEwJVUzEeMBwGA1UEChMVR29vZ2xlIFRydXN0IFNlcnZpY2VzMQwwCgYD
+VQQDEwNXRTEwHhcNMjUwODA1MDQzMzQ0WhcNMjUxMTAzMDUzMzM3WjAeMRwwGgYD
+VQQDExN3d3cuc2hvcC5naXRsYWIuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcD
+QgAEH7NhvWqON6RC3ILZVL/Rvz+9va2XzzQNp64cGFQgbCnSVuzUA6/dpXcVSeqz
+HTh0Xo7pVmD/4xHasz0AyBIdn6OCAk0wggJJMA4GA1UdDwEB/wQEAwIHgDATBgNV
+HSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTK+C4IvZY4
+gewTJBiABXM+WRvo7TAfBgNVHSMEGDAWgBSQd5I1Z8T/qMyp5nvZgHl7zJP5ODBe
+BggrBgEFBQcBAQRSMFAwJwYIKwYBBQUHMAGGG2h0dHA6Ly9vLnBraS5nb29nL3Mv
+d2UxL09VYzAlBggrBgEFBQcwAoYZaHR0cDovL2kucGtpLmdvb2cvd2UxLmNydDAe
+BgNVHREEFzAVghN3d3cuc2hvcC5naXRsYWIuY29tMBMGA1UdIAQMMAowCAYGZ4EM
+AQIBMDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9jLnBraS5nb29nL3dlMS9QQ1Vl
+UVZpUWxZYy5jcmwwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgDd3Mo0ldfhFgXn
+lTL6x5/4PRxQ39sAOhQSdgosrLvIKgAAAZh4uKoQAAAEAwBHMEUCIE9mYZ50t2/t
+Kvvoy7SoqYCBFaKU9cgMBpi8ZfiEd+IPAiEAqI/tjJLPcXqTenpye01o6mnRdZwX
+X/PuJNlM12T+uAMAdwAN4fIwK9MNwUBiEgnqVS78R3R8sdfpMO8OQh60fk6qNAAA
+AZh4uKnvAAAEAwBIMEYCIQC6TkBBxUo/wUQ5pHFlR7gBtAQDtbdpBjIEOIhlO5Qq
+gwIhAJ/kN9k01FWvlz6K9z/3byiunAWLN0QkYobuPAetRTreMAoGCCqGSM49BAMC
+A0kAMEYCIQCacVXDW8OtRx8RtrEl4e/cQP0SRePV8RZ76hZ7g2w+PgIhAJ8fKpZk
+Ykvytq3UmlQLyztLlxfyqkZ93cqgLvy+n+Sz
+-----END CERTIFICATE-----
+subject=CN=www.shop.gitlab.com
+issuer=C=US, O=Google Trust Services, CN=WE1
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 3914 bytes and written 1768 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE

@@ -1,0 +1,117 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host staging.gitlab.com:443 was resolved.
+* IPv6: 2606:4700:90:0:547e:1136:6ea4:7ef4
+* IPv4: 172.65.216.50
+*   Trying [2606:4700:90:0:547e:1136:6ea4:7ef4]:443...
+* Immediate connect fail for 2606:4700:90:0:547e:1136:6ea4:7ef4: Network is unreachable
+*   Trying 172.65.216.50:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1697 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2817 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [79 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=staging.gitlab.com
+*  start date: Sep 10 02:30:26 2025 GMT
+*  expire date: Dec  9 03:30:13 2025 GMT
+*  issuer: C=US; O=Google Trust Services; CN=WE1
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA256
+*   Certificate level 1: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 2: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to staging.gitlab.com (172.65.216.50) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: staging.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+< HTTP/1.1 301 Moved Permanently
+< Date: Fri, 12 Sep 2025 14:46:31 GMT
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 106
+< Connection: keep-alive
+< Location: https://staging.gitlab.com/users/sign_in
+< CF-Ray: 97e031dbbe0ce1e8-MRS
+< CF-Cache-Status: MISS
+< Cache-Control: no-store
+< Strict-Transport-Security: max-age=0; preload
+{ [5 bytes data]
+< content-security-policy: base-uri 'self'; child-src https://www.google.com/recaptcha/ https://www.recaptcha.net/ https://www.googletagmanager.com/ns.html https://*.zuora.com/apps/PublicHostedPageLite.do https://staging.gitlab.com/admin/ https://staging.gitlab.com/assets/ https://staging.gitlab.com/-/speedscope/index.html https://staging.gitlab.com/-/sandbox/ https://customers.staging.gitlab.com 'self' https://staging.gitlab.com/assets/ blob: data:; connect-src 'self' wss://staging.gitlab.com https://new-sentry.gitlab.net snowplowstg.trx.gitlab.net; default-src 'self'; font-src 'self'; form-action 'self' https: http:; frame-ancestors 'self'; frame-src https://www.google.com/recaptcha/ https://www.recaptcha.net/ https://www.googletagmanager.com/ns.html https://*.zuora.com/apps/PublicHostedPageLite.do https://staging.gitlab.com/admin/ https://staging.gitlab.com/assets/ https://staging.gitlab.com/-/speedscope/index.html https://staging.gitlab.com/-/sandbox/ https://customers.staging.gitlab.com; img-src 'self' data: blob: http: https:; manifest-src 'self'; media-src 'self' data: blob: http: https:; object-src 'none'; report-uri https://new-sentry.gitlab.net/api/4/security/?sentry_key=f5573e26de8f4293b285e556c35dfd6e&sentry_environment=gstg; script-src 'strict-dynamic' 'self' 'unsafe-eval' https://www.google.com/recaptcha/ https://www.recaptcha.net 'nonce-4XYNMCOE5+lPfkuMCQq1oQ=='; style-src 'self' 'unsafe-inline'; worker-src 'self' https://staging.gitlab.com/assets/ blob: data:
+< gitlab-lb: haproxy-main-02-lb-gstg
+< gitlab-sv: web-gke-us-east1-c-8181
+< nel: {"max_age": 0}
+< permissions-policy: interest-cohort=()
+< referrer-policy: strict-origin-when-cross-origin
+< x-content-type-options: nosniff
+< x-download-options: noopen
+< x-frame-options: SAMEORIGIN
+< x-gitlab-meta: {"correlation_id":"01K4Z68SDJND6A5F0K13KRA1ZX","version":"1"}
+< x-permitted-cross-domain-policies: none
+< x-request-id: 01K4Z68SDJND6A5F0K13KRA1ZX
+< x-robots-tag: noindex
+< x-runtime: 0.038953
+< x-ua-compatible: IE=edge
+< x-xss-protection: 1; mode=block
+< Set-Cookie: _cfuvid=IOpuj7eXWtoty2RagBL39X_dp5MYS3oTFY2X1LkOngU-1757688391199-0.0.1.1-604800000; path=/; domain=.staging.gitlab.com; HttpOnly; Secure; SameSite=None
+< Server: cloudflare
+< alt-svc: h3=":443"; ma=86400
+< 
+  0   106    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host staging.gitlab.com left intact
+HTTP/1.1 301 Moved Permanently
+Date: Fri, 12 Sep 2025 14:46:31 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 106
+Connection: keep-alive
+Location: https://staging.gitlab.com/users/sign_in
+CF-Ray: 97e031dbbe0ce1e8-MRS
+CF-Cache-Status: MISS
+Cache-Control: no-store
+Strict-Transport-Security: max-age=0; preload
+content-security-policy: base-uri 'self'; child-src https://www.google.com/recaptcha/ https://www.recaptcha.net/ https://www.googletagmanager.com/ns.html https://*.zuora.com/apps/PublicHostedPageLite.do https://staging.gitlab.com/admin/ https://staging.gitlab.com/assets/ https://staging.gitlab.com/-/speedscope/index.html https://staging.gitlab.com/-/sandbox/ https://customers.staging.gitlab.com 'self' https://staging.gitlab.com/assets/ blob: data:; connect-src 'self' wss://staging.gitlab.com https://new-sentry.gitlab.net snowplowstg.trx.gitlab.net; default-src 'self'; font-src 'self'; form-action 'self' https: http:; frame-ancestors 'self'; frame-src https://www.google.com/recaptcha/ https://www.recaptcha.net/ https://www.googletagmanager.com/ns.html https://*.zuora.com/apps/PublicHostedPageLite.do https://staging.gitlab.com/admin/ https://staging.gitlab.com/assets/ https://staging.gitlab.com/-/speedscope/index.html https://staging.gitlab.com/-/sandbox/ https://customers.staging.gitlab.com; img-src 'self' data: blob: http: https:; manifest-src 'self'; media-src 'self' data: blob: http: https:; object-src 'none'; report-uri https://new-sentry.gitlab.net/api/4/security/?sentry_key=f5573e26de8f4293b285e556c35dfd6e&sentry_environment=gstg; script-src 'strict-dynamic' 'self' 'unsafe-eval' https://www.google.com/recaptcha/ https://www.recaptcha.net 'nonce-4XYNMCOE5+lPfkuMCQq1oQ=='; style-src 'self' 'unsafe-inline'; worker-src 'self' https://staging.gitlab.com/assets/ blob: data:
+gitlab-lb: haproxy-main-02-lb-gstg
+gitlab-sv: web-gke-us-east1-c-8181
+nel: {"max_age": 0}
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-gitlab-meta: {"correlation_id":"01K4Z68SDJND6A5F0K13KRA1ZX","version":"1"}
+x-permitted-cross-domain-policies: none
+x-request-id: 01K4Z68SDJND6A5F0K13KRA1ZX
+x-robots-tag: noindex
+x-runtime: 0.038953
+x-ua-compatible: IE=edge
+x-xss-protection: 1; mode=block
+Set-Cookie: _cfuvid=IOpuj7eXWtoty2RagBL39X_dp5MYS3oTFY2X1LkOngU-1757688391199-0.0.1.1-604800000; path=/; domain=.staging.gitlab.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+

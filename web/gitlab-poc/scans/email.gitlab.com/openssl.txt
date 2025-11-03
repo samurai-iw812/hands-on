@@ -1,0 +1,91 @@
+>>> openssl s_client -servername
+Connecting to 104.17.72.206
+depth=2 C=US, O=Internet Security Research Group, CN=ISRG Root X1
+verify return:1
+depth=1 C=US, O=Let's Encrypt, CN=E5
+verify return:1
+depth=0 CN=email.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=email.gitlab.com
+   i:C=US, O=Let's Encrypt, CN=E5
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Jul 18 11:56:33 2025 GMT; NotAfter: Oct 16 11:56:32 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=E5
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: EC, (secp384r1); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDjjCCAxOgAwIBAgISBcmAXj9Ge/rBPO1r155kl31eMAoGCCqGSM49BAMDMDIx
+CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF
+NTAeFw0yNTA3MTgxMTU2MzNaFw0yNTEwMTYxMTU2MzJaMBsxGTAXBgNVBAMTEGVt
+YWlsLmdpdGxhYi5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASzX0R7yFCO
+Cr9YPXRjo+mUNgjBEy8rONDi1ZBtMwccQAV5hgVewIt/dqi8YbjKvgQA8iLnBInS
+am7Qk6Q2VSEeo4ICHjCCAhowDgYDVR0PAQH/BAQDAgeAMB0GA1UdJQQWMBQGCCsG
+AQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTTg0Ss9TiF
+bIdywKNyCVNvfgXuXzAfBgNVHSMEGDAWgBSfK1/PPCFPnQS37SssxMZwi9LXDTAy
+BggrBgEFBQcBAQQmMCQwIgYIKwYBBQUHMAKGFmh0dHA6Ly9lNS5pLmxlbmNyLm9y
+Zy8wGwYDVR0RBBQwEoIQZW1haWwuZ2l0bGFiLmNvbTATBgNVHSAEDDAKMAgGBmeB
+DAECATAtBgNVHR8EJjAkMCKgIKAehhxodHRwOi8vZTUuYy5sZW5jci5vcmcvOTUu
+Y3JsMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYAEvFONL1TckyEBhnDjz96E/jn
+tWKHiJxtMAWE6+WGJjoAAAGYHZo6yQAABAMARzBFAiAKcAsOfEGMtZKOzmuqq2Qi
+YQnVyMCXrvEpn3/run0oDgIhAN+bfEMCpt5iK+dpMO4XhQJ/Pl0kgDDpO70uU6U3
+tLrVAHYAGgT/SdBUHUCv9qDDv/HYxGcvTuzuI0BomGsXQC7ciX0AAAGYHZo7HwAA
+BAMARzBFAiAv15ecQy+7ossPddqXqCIZTpXdmSZd1F2M2OCudLqw5gIhAO7A1wKI
+FN0sVM9rBuDdS4FI5RqNffw9ZyeySlwy1/FRMAoGCCqGSM49BAMDA2kAMGYCMQDm
+uFzmQz5AfbkEHVTuE2fFXEERACQCcmqetL1uvh6PgXsYlz+0XJjWkONkAqHHiwsC
+MQCbf+9y+MZSyamhRgdbvyyU9rLPaRu7hdP2KqIP7A4kHxev6BtN4rZ4OzAHAZVJ
++9w=
+-----END CERTIFICATE-----
+subject=CN=email.gitlab.com
+issuer=C=US, O=Let's Encrypt, CN=E5
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2498 bytes and written 1770 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-ECDSA-CHACHA20-POLY1305
+Protocol: TLSv1.2
+Server public key is 256 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-ECDSA-CHACHA20-POLY1305
+    Session-ID: CC2B3CB6803F2E7B55F303B579428517714D46824D96749D4F4B06F65068B71C
+    Session-ID-ctx: 
+    Master-Key: 2C9DC08F588863DBF79966B201081B3AFBCA11A01131B0239D839D380C31A79B258703CAE04B1533852A18C6C8C37245
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 64800 (seconds)
+    TLS session ticket:
+    0000 - c2 16 27 2a 86 d2 9b 6d-83 27 c2 cd af 31 f4 57   ..'*...m.'...1.W
+    0010 - d1 cd b5 7d 07 ce 9e b8-78 05 93 70 cc 3f d0 48   ...}....x..p.?.H
+    0020 - 9e d1 9b 61 ef c8 e3 bd-09 2f 6d c0 c1 b8 e0 df   ...a...../m.....
+    0030 - fd ee 09 8a 1d 29 86 5d-24 d4 93 89 86 92 e8 a6   .....).]$.......
+    0040 - cf bd d4 7e b7 9b a4 b4-c4 5f e6 46 f0 1a 0c 2c   ...~....._.F...,
+    0050 - 9b a7 50 bf aa aa f3 e2-9d 6d 23 ec b6 c2 20 7b   ..P......m#... {
+    0060 - ab c8 8f ac 29 58 7c c4-ef d9 47 af 5a 65 71 69   ....)X|...G.Zeqi
+    0070 - 92 9f 86 cd c2 b7 34 9e-12 29 36 11 4c ea 56 80   ......4..)6.L.V.
+    0080 - a7 21 e3 ed 61 08 15 53-19 bb f0 7d 8a 46 85 e6   .!..a..S...}.F..
+    0090 - e0 e2 68 90 46 8c 86 be-47 6a f7 4d b2 0b 5f 63   ..h.F...Gj.M.._c
+    00a0 - 36 c5 22 a5 be 1f 74 be-ef 48 15 47 13 24 78 b4   6."...t..H.G.$x.
+    00b0 - 13 60 bc 44 a9 08 8a 7e-e9 61 2e 03 a1 3c 95 06   .`.D...~.a...<..
+
+    Start Time: 1757688206
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: yes
+---
+DONE

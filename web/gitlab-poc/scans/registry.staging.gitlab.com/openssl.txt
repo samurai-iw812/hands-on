@@ -1,0 +1,84 @@
+>>> openssl s_client -servername
+Connecting to 35.237.188.172
+depth=2 C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority
+verify return:1
+depth=1 C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain Validation Secure Server CA
+verify return:1
+depth=0 CN=registry.staging.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=registry.staging.gitlab.com
+   i:C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain Validation Secure Server CA
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Jan 16 00:00:00 2025 GMT; NotAfter: Feb 14 23:59:59 2026 GMT
+ 1 s:C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain Validation Secure Server CA
+   i:C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority
+   a:PKEY: RSA, 2048 (bit); sigalg: sha384WithRSAEncryption
+   v:NotBefore: Nov  2 00:00:00 2018 GMT; NotAfter: Dec 31 23:59:59 2030 GMT
+ 2 s:C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority
+   i:C=GB, ST=Greater Manchester, L=Salford, O=Comodo CA Limited, CN=AAA Certificate Services
+   a:PKEY: RSA, 4096 (bit); sigalg: sha384WithRSAEncryption
+   v:NotBefore: Mar 12 00:00:00 2019 GMT; NotAfter: Dec 31 23:59:59 2028 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGYDCCBUigAwIBAgIRALd6ekLi0UYhnDPLtyp+ZpQwDQYJKoZIhvcNAQELBQAw
+gY8xCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO
+BgNVBAcTB1NhbGZvcmQxGDAWBgNVBAoTD1NlY3RpZ28gTGltaXRlZDE3MDUGA1UE
+AxMuU2VjdGlnbyBSU0EgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBD
+QTAeFw0yNTAxMTYwMDAwMDBaFw0yNjAyMTQyMzU5NTlaMCYxJDAiBgNVBAMTG3Jl
+Z2lzdHJ5LnN0YWdpbmcuZ2l0bGFiLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBANrz7cLr8O0apBZmyQiu3vaE29X7Ka/zootOzgEpL7rBdkt2Bh4i
+ohgONhV1phW9ePNPD6Ez939pdt247jNonsc7VhakiXtcxZGl1TUL6Q1jpC2CPrHr
+uLxrvNWtG5w/dLFw17MzdA2Irbzv/N37H2ZO1vgqqGgG7FfEpPXymQNmso9gT4G9
+EVdYu8Km9iuafZP42GemGuu/wYZfNqnbB3ixw6CV+LOutZgLC84jR1m7yArdhGBS
+CE1KiCXFXd/cnqiCc3wOkPjceVr6zrj+X6UohfbiRiLpOCMMj0mNLnNAdJnyISba
+OStWtheAmc/gnEnKeBWHG5ytedrhRRO8OHkCAwEAAaOCAx0wggMZMB8GA1UdIwQY
+MBaAFI2MXsRUrYrhd+mb+ZsF4bgBjWHhMB0GA1UdDgQWBBQqFHQlZT8y95u57Acx
+N5OGuQjo6TAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAU
+BggrBgEFBQcDAQYIKwYBBQUHAwIwSQYDVR0gBEIwQDA0BgsrBgEEAbIxAQICBzAl
+MCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQUzAIBgZngQwBAgEw
+gYQGCCsGAQUFBwEBBHgwdjBPBggrBgEFBQcwAoZDaHR0cDovL2NydC5zZWN0aWdv
+LmNvbS9TZWN0aWdvUlNBRG9tYWluVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNy
+dDAjBggrBgEFBQcwAYYXaHR0cDovL29jc3Auc2VjdGlnby5jb20wRwYDVR0RBEAw
+PoIbcmVnaXN0cnkuc3RhZ2luZy5naXRsYWIuY29tgh93d3cucmVnaXN0cnkuc3Rh
+Z2luZy5naXRsYWIuY29tMIIBfQYKKwYBBAHWeQIEAgSCAW0EggFpAWcAdgCWl2S/
+VViXrfdDh2g3CEJ36fA61fak8zZuRqQ/D8qpxgAAAZRseZUGAAAEAwBHMEUCIQCO
+t3mTMc+7R/TJJQU9FNlfSliBKy6XcPPbmMDoLzvsRQIgPuwfu1Yj5hnhpAh0Bqew
+OtDrNGPPJwPd3rlpxk2h4kUAdQAZhtTHKKpv/roDb3gqTQGRqs4tcjEPrs5dcEEt
+JUzH1AAAAZRseZSjAAAEAwBGMEQCIDK2kXT+CxkPZYF/HqQSo2+5BQmqI/hjFWuQ
+bkVkxcfRAiBUlLGrpXsITo1KX1+omgVOHhJroOtvqW3l/FhfNk+SCAB2AMs49xWJ
+fIShRF9bwd37yW7ymlnNRwppBYWwyxTDFFjnAAABlGx5lNYAAAQDAEcwRQIgLIUx
+VO5r2w70mn1ST3KdG0GWvFePAfKlC3S54DxibxwCIQCbJnH9rLYybujB8KlAiokX
+nkQ5k8PKQFMCEWfwmAv36zANBgkqhkiG9w0BAQsFAAOCAQEAKfie+0yeC/NzFtdZ
+Q/wa11FCCYqYe1eLoIEpA69qjQWhYhPf9gRQMcpuCYjpIIfq5PUNO1QJovQh6ayk
+H7TPBgF04cq/I7GEImC856u48cOPVQHIk0GHbtQjJdDjLKznRWlLGMvfuCMSa8fY
+WDnU/jXTutOUzl2WkTLIjJnBJHvA7JC0oafaRZEjryO+W83NrZ2WdMbP4XvOku2P
+6dcwIiPrGRZWxVwhGYoPNaVEDv8SbuZD+L+jSOEd9ZRP172FmLhgyIQyuA+9TESu
+JCVOiaFHtkqcXUngHmnw+hLfOZA6XUTre0PXOmZtD7Fyed65U0mCo82u8enu0SMU
+1ZR4OA==
+-----END CERTIFICATE-----
+subject=CN=registry.staging.gitlab.com
+issuer=C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain Validation Secure Server CA
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: rsa_pss_rsae_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 5178 bytes and written 1776 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE

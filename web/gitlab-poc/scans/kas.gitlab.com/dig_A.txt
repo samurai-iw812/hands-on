@@ -1,0 +1,3 @@
+>>> dig A @8.8.8.8
+kas.gitlab.com.		300	IN	CNAME	04fb9c9ad8e14a468aeae4db13e0497e.pacloudflare.com.
+04fb9c9ad8e14a468aeae4db13e0497e.pacloudflare.com. 300 IN A 172.65.247.105

@@ -1,0 +1,65 @@
+>>> openssl s_client -servername
+Connecting to 104.18.3.172
+depth=2 C=US, O=Internet Security Research Group, CN=ISRG Root X1
+verify return:1
+depth=1 C=US, O=Let's Encrypt, CN=E6
+verify return:1
+depth=0 CN=university.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=university.gitlab.com
+   i:C=US, O=Let's Encrypt, CN=E6
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Jul 15 11:21:54 2025 GMT; NotAfter: Oct 13 11:21:53 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=E6
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: EC, (secp384r1); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDmDCCAx2gAwIBAgISBt1BHsvA8Wn5qDdGdq/IbS0rMAoGCCqGSM49BAMDMDIx
+CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF
+NjAeFw0yNTA3MTUxMTIxNTRaFw0yNTEwMTMxMTIxNTNaMCAxHjAcBgNVBAMTFXVu
+aXZlcnNpdHkuZ2l0bGFiLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABIdP
+22ihAt9zDlZQYRBp/2ooZf3714/3/R8MzVxz52bQLmH6NPEl9as+nldZir12NnqL
+RwdHjTBcCamnkguzfk+jggIjMIICHzAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYw
+FAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFBiQ
+6oyJXRFVUssHZi9o7hi/RM80MB8GA1UdIwQYMBaAFJMnRpgDqVFojpjWxEJI2yO/
+WJTSMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAoYWaHR0cDovL2U2LmkubGVu
+Y3Iub3JnLzAgBgNVHREEGTAXghV1bml2ZXJzaXR5LmdpdGxhYi5jb20wEwYDVR0g
+BAwwCjAIBgZngQwBAgEwLQYDVR0fBCYwJDAioCCgHoYcaHR0cDovL2U2LmMubGVu
+Y3Iub3JnLzQ0LmNybDCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2AO08S9boBsKk
+ogBX28sk4jgB31Ev7cSGxXAPIN23Pj/gAAABmA4Ha7oAAAQDAEcwRQIhALtyh2T4
+PxbzXPWqdcrc9ncmP9C8/bT/A/sO+hzZmiO1AiBI+4RlLs6VDU+hpE62o7fU5iYq
+9YvpOiBkZjbAxZcKxQB2AA3h8jAr0w3BQGISCepVLvxHdHyx1+kw7w5CHrR+Tqo0
+AAABmA4Ha68AAAQDAEcwRQIhAJUNcLi9Mv/g3FEzmZzeJi7DTaMJD5a8W2zG6UBY
+OkHjAiBAfgqX27eIh0oQ5SKEkMuAHVvUdTXrIhTJIvAXPJgG7TAKBggqhkjOPQQD
+AwNpADBmAjEAuXpkrcul8JAv0fRivlPfq7C4IOXkzx5xfs9baemwGnCbO+FiUKQ2
+5eh6gRspnHJyAjEAh4wHA5PJDl7AXR3UXBbS+HWLz/wP4jXsMPWlnVZk3cx2EeN9
+CCfdVwYqpOpGyFR9
+-----END CERTIFICATE-----
+subject=CN=university.gitlab.com
+issuer=C=US, O=Let's Encrypt, CN=E6
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 3442 bytes and written 1770 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE

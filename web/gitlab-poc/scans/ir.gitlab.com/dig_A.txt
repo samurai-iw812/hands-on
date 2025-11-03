@@ -1,0 +1,8 @@
+>>> dig A @8.8.8.8
+ir.gitlab.com.		300	IN	CNAME	gitlab2024ir-farm.q4web.com.
+gitlab2024ir-farm.q4web.com. 60	IN	CNAME	webfarm-31002.q4web.com.
+webfarm-31002.q4web.com. 60	IN	CNAME	webfarm-300.q4web.com.
+webfarm-300.q4web.com.	60	IN	CNAME	cloudflare.cdn.web.prd.q4inc.com.
+cloudflare.cdn.web.prd.q4inc.com. 60 IN	CNAME	cloudflare.cdn.web.prd.q4inc.com.cdn.cloudflare.net.
+cloudflare.cdn.web.prd.q4inc.com.cdn.cloudflare.net. 300 IN A 162.159.129.11
+cloudflare.cdn.web.prd.q4inc.com.cdn.cloudflare.net. 300 IN A 162.159.130.11

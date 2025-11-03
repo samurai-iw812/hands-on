@@ -1,0 +1,106 @@
+>>> openssl s_client -servername
+Connecting to 35.185.44.232
+depth=2 C=US, O=Internet Security Research Group, CN=ISRG Root X1
+verify return:1
+depth=1 C=US, O=Let's Encrypt, CN=R11
+verify return:1
+depth=0 CN=advisories.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=advisories.gitlab.com
+   i:C=US, O=Let's Encrypt, CN=R11
+   a:PKEY: RSA, 4096 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Aug 19 13:32:39 2025 GMT; NotAfter: Nov 17 13:32:38 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=R11
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+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
+POnVF8aVEwk0+w==
+-----END CERTIFICATE-----
+subject=CN=advisories.gitlab.com
+issuer=C=US, O=Let's Encrypt, CN=R11
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: rsa_pss_rsae_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3637 bytes and written 1754 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Protocol: TLSv1.3
+Server public key is 4096 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_128_GCM_SHA256
+    Session-ID: B2274FAEEE578AA1601E8534F76BF0743FC4BB7AC0E3C1913B2E72FDB05922F9
+    Session-ID-ctx: 
+    Resumption PSK: E9DD87CBE9A430B348B1019AECF5E07EF3C70B165535F8E2D3506D89D098186B
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 604800 (seconds)
+    TLS session ticket:
+    0000 - 46 57 e5 39 17 51 a1 4c-ea 48 20 15 a2 95 37 72   FW.9.Q.L.H ...7r
+    0010 - ae 86 d1 d3 57 1c e8 5e-bf 1e 38 0b 9d 84 95 e5   ....W..^..8.....
+    0020 - b7 84 68 19 17 8a 8f 9f-5a b4 bc 62 73 1a a2 72   ..h.....Z..bs..r
+    0030 - 73 a5 ff b5 26 c1 40 3b-55 9d c1 16 a6 db 4a bc   s...&.@;U.....J.
+    0040 - c5 5d 50 af cc 04 a0 d9-cb 35 26 6b 3a 3b a3 36   .]P......5&k:;.6
+    0050 - bb ca fc 86 bf c0 8e 3c-a2 5c 35 c5 04 7c a1 2b   .......<.\5..|.+
+    0060 - bc 84 d3 11 e8 b0 a4 98-68                        ........h
+
+    Start Time: 1757688060
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK

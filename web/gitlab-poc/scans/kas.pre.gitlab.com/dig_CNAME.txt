@@ -1,0 +1,2 @@
+>>> dig CNAME @1.1.1.1
+kas.pre.gitlab.com.	300	IN	CNAME	24af887c7513405b90e6f516384b339e.pacloudflare.com.

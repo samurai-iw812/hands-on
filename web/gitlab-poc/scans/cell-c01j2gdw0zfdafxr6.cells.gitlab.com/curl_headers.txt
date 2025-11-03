@@ -1,0 +1,105 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0* Host cell-c01j2gdw0zfdafxr6.cells.gitlab.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 172.65.165.13
+*   Trying 172.65.165.13:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1718 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2294 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [80 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=cell-c01j2gdw0zfdafxr6.cells.gitlab.com
+*  start date: Aug 11 06:18:05 2025 GMT
+*  expire date: Nov  9 06:18:04 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=E6
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 1: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to cell-c01j2gdw0zfdafxr6.cells.gitlab.com (172.65.165.13) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: cell-c01j2gdw0zfdafxr6.cells.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+< HTTP/1.1 302 Found
+< Date: Fri, 12 Sep 2025 14:42:15 GMT
+< Content-Type: text/html; charset=utf-8
+< Connection: keep-alive
+< location: https://cell-c01j2gdw0zfdafxr6.cells.gitlab.com/users/sign_in
+< Set-Cookie: glbsticky=1757688136.626.51.794216|155a34ed77d2269bfc4c9d6f5ac87e98; Expires=Fri, 12-Sep-25 14:47:15 GMT; Max-Age=300; Path=/; Secure; HttpOnly
+< Cache-Control: no-cache
+< content-security-policy: 
+< nel: {"max_age": 0}
+< permissions-policy: interest-cohort=()
+< referrer-policy: strict-origin-when-cross-origin
+< x-content-type-options: nosniff
+< x-download-options: noopen
+< x-frame-options: SAMEORIGIN
+< x-gitlab-meta: {"correlation_id":"01K4Z60ZYEQJHTM85VWQDK6HDH","version":"1"}
+< x-permitted-cross-domain-policies: none
+< x-request-id: 01K4Z60ZYEQJHTM85VWQDK6HDH
+< x-runtime: 0.044704
+< x-ua-compatible: IE=edge
+< x-xss-protection: 1; mode=block
+< strict-transport-security: max-age=63072000
+< cf-cache-status: DYNAMIC
+< Set-Cookie: _cfuvid=gTjwhBJFC2l3ka9B0tS3r7LC2xfQdZAcdSPd6tH6Wd0-1757688135731-0.0.1.1-604800000; path=/; domain=.cell-c01j2gdw0zfdafxr6.cells.gitlab.com; HttpOnly; Secure; SameSite=None
+< Server: cloudflare
+< CF-RAY: 97e02b9dfe06a65d-MRS
+< 
+  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
+* Connection #0 to host cell-c01j2gdw0zfdafxr6.cells.gitlab.com left intact
+HTTP/1.1 302 Found
+Date: Fri, 12 Sep 2025 14:42:15 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+location: https://cell-c01j2gdw0zfdafxr6.cells.gitlab.com/users/sign_in
+Set-Cookie: glbsticky=1757688136.626.51.794216|155a34ed77d2269bfc4c9d6f5ac87e98; Expires=Fri, 12-Sep-25 14:47:15 GMT; Max-Age=300; Path=/; Secure; HttpOnly
+Cache-Control: no-cache
+content-security-policy: 
+nel: {"max_age": 0}
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-gitlab-meta: {"correlation_id":"01K4Z60ZYEQJHTM85VWQDK6HDH","version":"1"}
+x-permitted-cross-domain-policies: none
+x-request-id: 01K4Z60ZYEQJHTM85VWQDK6HDH
+x-runtime: 0.044704
+x-ua-compatible: IE=edge
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=63072000
+cf-cache-status: DYNAMIC
+Set-Cookie: _cfuvid=gTjwhBJFC2l3ka9B0tS3r7LC2xfQdZAcdSPd6tH6Wd0-1757688135731-0.0.1.1-604800000; path=/; domain=.cell-c01j2gdw0zfdafxr6.cells.gitlab.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 97e02b9dfe06a65d-MRS
+

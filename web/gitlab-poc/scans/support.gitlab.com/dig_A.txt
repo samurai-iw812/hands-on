@@ -1,0 +1,4 @@
+>>> dig A @8.8.8.8
+support.gitlab.com.	300	IN	CNAME	gitlab.zendesk.com.
+gitlab.zendesk.com.	300	IN	A	104.18.249.37
+gitlab.zendesk.com.	300	IN	A	104.18.248.37

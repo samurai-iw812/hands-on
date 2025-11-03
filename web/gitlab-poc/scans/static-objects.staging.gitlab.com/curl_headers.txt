@@ -1,0 +1,84 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host static-objects.staging.gitlab.com:443 was resolved.
+* IPv6: 2606:4700:4400::6812:295a, 2a06:98c1:310c::ac40:92a6
+* IPv4: 104.18.41.90, 172.64.146.166
+*   Trying [2606:4700:4400::6812:295a]:443...
+* Immediate connect fail for 2606:4700:4400::6812:295a: Network is unreachable
+*   Trying [2a06:98c1:310c::ac40:92a6]:443...
+* Immediate connect fail for 2a06:98c1:310c::ac40:92a6: Network is unreachable
+*   Trying 104.18.41.90:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1712 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2817 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [79 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=staging.gitlab.com
+*  start date: Sep 10 02:30:26 2025 GMT
+*  expire date: Dec  9 03:30:13 2025 GMT
+*  issuer: C=US; O=Google Trust Services; CN=WE1
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA256
+*   Certificate level 1: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 2: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to static-objects.staging.gitlab.com (104.18.41.90) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: static-objects.staging.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+< HTTP/1.1 400 Bad Request
+< Date: Fri, 12 Sep 2025 14:46:12 GMT
+< Connection: keep-alive
+< Access-Control-Allow-Origin: *
+< Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=UlztdAIwptzpXzYXBb%2BM7cY5PNw6R%2BO4XdULyUSATLqMsy58Hec891CXh1cJaxrKiIRwq%2BhgLuMk04eH%2BN%2BSNrOf1R%2F20Nn3dgTbdM1BqVjXHd4k979POGQtyErZEAFFdY1awARfaeAZWXOYHqAoDZwXyg%3D%3D"}],"group":"cf-nel","max_age":604800}
+< NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+< Strict-Transport-Security: max-age=0; preload
+< X-Content-Type-Options: nosniff
+< Set-Cookie: _cfuvid=w1Ef9soUNuJuUhpjmbCFen_bFeZqzbvnQFLMRcso9nw-1757688372309-0.0.1.1-604800000; path=/; domain=.staging.gitlab.com; HttpOnly; Secure; SameSite=None
+< Server: cloudflare
+< CF-RAY: 97e03166d89f53a8-MRS
+< alt-svc: h3=":443"; ma=86400
+< 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host static-objects.staging.gitlab.com left intact
+HTTP/1.1 400 Bad Request
+Date: Fri, 12 Sep 2025 14:46:12 GMT
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=UlztdAIwptzpXzYXBb%2BM7cY5PNw6R%2BO4XdULyUSATLqMsy58Hec891CXh1cJaxrKiIRwq%2BhgLuMk04eH%2BN%2BSNrOf1R%2F20Nn3dgTbdM1BqVjXHd4k979POGQtyErZEAFFdY1awARfaeAZWXOYHqAoDZwXyg%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Strict-Transport-Security: max-age=0; preload
+X-Content-Type-Options: nosniff
+Set-Cookie: _cfuvid=w1Ef9soUNuJuUhpjmbCFen_bFeZqzbvnQFLMRcso9nw-1757688372309-0.0.1.1-604800000; path=/; domain=.staging.gitlab.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 97e03166d89f53a8-MRS
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,71 @@
+>>> openssl s_client -servername
+Connecting to 104.18.40.9
+depth=2 C=US, O=Internet Security Research Group, CN=ISRG Root X1
+verify return:1
+depth=1 C=US, O=Let's Encrypt, CN=E5
+verify return:1
+depth=0 CN=registry.us-east1.cell-c01j2gdw0zfdafxr6.cells.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=registry.us-east1.cell-c01j2gdw0zfdafxr6.cells.gitlab.com
+   i:C=US, O=Let's Encrypt, CN=E5
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Aug 11 06:19:53 2025 GMT; NotAfter: Nov  9 06:19:52 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=E5
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: EC, (secp384r1); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIExTCCBEugAwIBAgISBe2oxrmbMpiwUH+ds6l6gFyKMAoGCCqGSM49BAMDMDIx
+CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF
+NTAeFw0yNTA4MTEwNjE5NTNaFw0yNTExMDkwNjE5NTJaMEQxQjBABgNVBAMTOXJl
+Z2lzdHJ5LnVzLWVhc3QxLmNlbGwtYzAxajJnZHcwemZkYWZ4cjYuY2VsbHMuZ2l0
+bGFiLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABBL6Z16nnbC4VXb5plpH
+OiBdx3Q69tW7WeMabSrGxMl6YeCYVNWyKzL6XsXrrEd9Ae7kAM0PSHf2/y7HWy2E
+CHajggMtMIIDKTAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUHAwEG
+CCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFD0Dw//RPY4qKTmCZ8sM
+bNE6yWDrMB8GA1UdIwQYMBaAFJ8rX888IU+dBLftKyzExnCL0tcNMDIGCCsGAQUF
+BwEBBCYwJDAiBggrBgEFBQcwAoYWaHR0cDovL2U1LmkubGVuY3Iub3JnLzCCAScG
+A1UdEQSCAR4wggEagjhncmFmYW5hLnVzLWVhc3QxLmNlbGwtYzAxajJnZHcwemZk
+YWZ4cjYuY2VsbHMuZ2l0bGFiLmNvbYI0a2FzLnVzLWVhc3QxLmNlbGwtYzAxajJn
+ZHcwemZkYWZ4cjYuY2VsbHMuZ2l0bGFiLmNvbYI7b3BlbnNlYXJjaC51cy1lYXN0
+MS5jZWxsLWMwMWoyZ2R3MHpmZGFmeHI2LmNlbGxzLmdpdGxhYi5jb22COXJlZ2lz
+dHJ5LnVzLWVhc3QxLmNlbGwtYzAxajJnZHcwemZkYWZ4cjYuY2VsbHMuZ2l0bGFi
+LmNvbYIwdXMtZWFzdDEuY2VsbC1jMDFqMmdkdzB6ZmRhZnhyNi5jZWxscy5naXRs
+YWIuY29tMBMGA1UdIAQMMAowCAYGZ4EMAQIBMC0GA1UdHwQmMCQwIqAgoB6GHGh0
+dHA6Ly9lNS5jLmxlbmNyLm9yZy8xMS5jcmwwggEFBgorBgEEAdZ5AgQCBIH2BIHz
+APEAdwDtPEvW6AbCpKIAV9vLJOI4Ad9RL+3EhsVwDyDdtz4/4AAAAZiX/p6NAAAE
+AwBIMEYCIQDrT8dlRQzcyPjS5ZM9I6eGMwNC0ZtQdKc+9JlAqiNI9QIhAJ8N9aWS
+GYE3a2ObZ0MQg8pEYo2HIsIVUFMWZsoKFTtlAHYA3dzKNJXX4RYF55Uy+sef+D0c
+UN/bADoUEnYKLKy7yCoAAAGYl/6e0QAABAMARzBFAiEAzpfbsjZyFAy62FYFvtq4
+hFnDtC9CeB2C/2wL33xzzH4CIF6SK2dSsZpi9fiO9FlRF4Dt/OQOtCHcYXL8O+yu
+5Ry1MAoGCCqGSM49BAMDA2gAMGUCMByEH0Aa0Q467p3L9h0XUORv7OG9EQJF6wKY
+M13NA7MWGOdbWYEqAnNi0uit4oDy6QIxAP1n8dvA2Nu2cr0rXz/QkqVmdfRdF/KS
+ICuMLUxYQeNLp1JOd0MeruO6mqljnE3zJA==
+-----END CERTIFICATE-----
+subject=CN=registry.us-east1.cell-c01j2gdw0zfdafxr6.cells.gitlab.com
+issuer=C=US, O=Let's Encrypt, CN=E5
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 3743 bytes and written 1806 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE

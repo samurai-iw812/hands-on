@@ -1,0 +1,76 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host scim.gitlab.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 35.193.81.142
+*   Trying 35.193.81.142:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1694 bytes data]
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [21 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2042 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [78 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / x25519 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=scim.gitlab.com
+*  start date: Sep  9 19:29:00 2025 GMT
+*  expire date: Dec  8 19:28:59 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=E7
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 1: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to scim.gitlab.com (35.193.81.142) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: scim.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [122 bytes data]
+* Request completely sent off
+{ [5 bytes data]
+< HTTP/1.1 404 Not Found
+< Content-Security-Policy: default-src 'none'; connect-src 'self' https:; script-src 'self'; img-src 'self' data: https://w3.org; style-src 'self'; frame-ancestors 'none'; form-action 'none'; manifest-src 'self'
+< Content-Type: application/json
+< Referrer-Policy: no-referrer
+< Request-Id: d3234f91obca8ac7g33g
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: DENY
+< X-Robots-Tag: none
+< X-Xss-Protection: 1; mode=block
+< Date: Fri, 12 Sep 2025 14:46:21 GMT
+< Content-Length: 81
+< 
+  0    81    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host scim.gitlab.com left intact
+HTTP/1.1 404 Not Found
+Content-Security-Policy: default-src 'none'; connect-src 'self' https:; script-src 'self'; img-src 'self' data: https://w3.org; style-src 'self'; frame-ancestors 'none'; form-action 'none'; manifest-src 'self'
+Content-Type: application/json
+Referrer-Policy: no-referrer
+Request-Id: d3234f91obca8ac7g33g
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Robots-Tag: none
+X-Xss-Protection: 1; mode=block
+Date: Fri, 12 Sep 2025 14:46:21 GMT
+Content-Length: 81
+

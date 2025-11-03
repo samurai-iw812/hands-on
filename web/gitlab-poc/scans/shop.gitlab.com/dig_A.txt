@@ -1,0 +1,5 @@
+>>> dig A @8.8.8.8
+shop.gitlab.com.	300	IN	CNAME	app.brilliantmade.com.
+app.brilliantmade.com.	300	IN	A	104.26.6.121
+app.brilliantmade.com.	300	IN	A	172.67.70.59
+app.brilliantmade.com.	300	IN	A	104.26.7.121

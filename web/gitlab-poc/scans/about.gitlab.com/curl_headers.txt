@@ -1,0 +1,102 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host about.gitlab.com:443 was resolved.
+* IPv6: 2a06:98c1:3109::6812:2b86, 2606:4700:4409::ac40:907a
+* IPv4: 172.64.144.122, 104.18.43.134
+*   Trying [2a06:98c1:3109::6812:2b86]:443...
+* Immediate connect fail for 2a06:98c1:3109::6812:2b86: Network is unreachable
+*   Trying [2606:4700:4409::ac40:907a]:443...
+* Immediate connect fail for 2606:4700:4409::ac40:907a: Network is unreachable
+*   Trying 172.64.144.122:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1695 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2545 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [78 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=about.gitlab.com
+*  start date: Jul 29 01:13:31 2025 GMT
+*  expire date: Oct 27 02:13:19 2025 GMT
+*  issuer: C=US; O=Google Trust Services; CN=WE1
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA256
+*   Certificate level 1: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 2: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to about.gitlab.com (172.64.144.122) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: about.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+< HTTP/1.1 200 OK
+< Date: Fri, 12 Sep 2025 14:40:13 GMT
+< Content-Type: text/html
+< Connection: keep-alive
+< CF-Ray: 97e028a56fafe17d-MRS
+< CF-Cache-Status: HIT
+< Accept-Ranges: bytes
+< Age: 25
+< Cache-Control: public, max-age=14400
+< Expires: Fri, 12 Sep 2025 18:40:13 GMT
+< Last-Modified: Fri, 12 Sep 2025 13:38:56 GMT
+< Vary: Accept-Encoding, Origin
+< x-goog-generation: 1757684336016783
+< x-goog-hash: crc32c=0NFjXg==
+< x-goog-hash: md5=MmnUymIQZiAAikhapsTPxw==
+< x-goog-metageneration: 1
+< x-goog-storage-class: MULTI_REGIONAL
+< x-goog-stored-content-encoding: identity
+< x-goog-stored-content-length: 196408
+< x-guploader-uploadid: ABgVH896GUQo9w_fqEn5kh2R-s5OyxW9b5cQrCKPM5stVPPQWO4EVgz2g3DYy-g5bpsu1CBdiYxei5g
+< Server: cloudflare
+< 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host about.gitlab.com left intact
+HTTP/1.1 200 OK
+Date: Fri, 12 Sep 2025 14:40:13 GMT
+Content-Type: text/html
+Connection: keep-alive
+CF-Ray: 97e028a56fafe17d-MRS
+CF-Cache-Status: HIT
+Accept-Ranges: bytes
+Age: 25
+Cache-Control: public, max-age=14400
+Expires: Fri, 12 Sep 2025 18:40:13 GMT
+Last-Modified: Fri, 12 Sep 2025 13:38:56 GMT
+Vary: Accept-Encoding, Origin
+x-goog-generation: 1757684336016783
+x-goog-hash: crc32c=0NFjXg==
+x-goog-hash: md5=MmnUymIQZiAAikhapsTPxw==
+x-goog-metageneration: 1
+x-goog-storage-class: MULTI_REGIONAL
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 196408
+x-guploader-uploadid: ABgVH896GUQo9w_fqEn5kh2R-s5OyxW9b5cQrCKPM5stVPPQWO4EVgz2g3DYy-g5bpsu1CBdiYxei5g
+Server: cloudflare
+

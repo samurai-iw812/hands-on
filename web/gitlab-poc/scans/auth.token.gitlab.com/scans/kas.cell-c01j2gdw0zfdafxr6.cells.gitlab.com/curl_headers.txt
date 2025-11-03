@@ -1,0 +1,78 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host kas.cell-c01j2gdw0zfdafxr6.cells.gitlab.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 172.64.147.247, 104.18.40.9
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 172.64.147.247:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1722 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2294 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [78 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=cell-c01j2gdw0zfdafxr6.cells.gitlab.com
+*  start date: Aug 11 06:18:05 2025 GMT
+*  expire date: Nov  9 06:18:04 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=E6
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 1: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to kas.cell-c01j2gdw0zfdafxr6.cells.gitlab.com (172.64.147.247) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: kas.cell-c01j2gdw0zfdafxr6.cells.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+< HTTP/1.1 426 Upgrade Required
+< Date: Fri, 12 Sep 2025 14:58:57 GMT
+< Content-Type: text/plain; charset=utf-8
+< Content-Length: 76
+< Connection: keep-alive
+< x-content-type-options: nosniff
+< strict-transport-security: max-age=63072000
+< referrer-policy: strict-origin-when-cross-origin
+< cf-cache-status: DYNAMIC
+< Set-Cookie: _cfuvid=L5PXUVnl7d5Uu.5_MJgH06pUl7KLuwQKk2cUDfH0Wqo-1757689137462-0.0.1.1-604800000; path=/; domain=.cell-c01j2gdw0zfdafxr6.cells.gitlab.com; HttpOnly; Secure; SameSite=None
+< Server: cloudflare
+< CF-RAY: 97e044130886e27e-MRS
+< 
+  0    76    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host kas.cell-c01j2gdw0zfdafxr6.cells.gitlab.com left intact
+HTTP/1.1 426 Upgrade Required
+Date: Fri, 12 Sep 2025 14:58:57 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 76
+Connection: keep-alive
+x-content-type-options: nosniff
+strict-transport-security: max-age=63072000
+referrer-policy: strict-origin-when-cross-origin
+cf-cache-status: DYNAMIC
+Set-Cookie: _cfuvid=L5PXUVnl7d5Uu.5_MJgH06pUl7KLuwQKk2cUDfH0Wqo-1757689137462-0.0.1.1-604800000; path=/; domain=.cell-c01j2gdw0zfdafxr6.cells.gitlab.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 97e044130886e27e-MRS
+

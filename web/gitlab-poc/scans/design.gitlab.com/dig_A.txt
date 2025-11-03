@@ -1,0 +1,3 @@
+>>> dig A @8.8.8.8
+design.gitlab.com.	300	IN	CNAME	gitlab-org.gitlab.io.
+gitlab-org.gitlab.io.	300	IN	A	35.185.44.232

@@ -1,0 +1,117 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host contributors.gitlab.com:443 was resolved.
+* IPv6: 2a06:98c1:3109::ac40:94f5, 2606:4700:4406::6812:270b
+* IPv4: 172.64.148.245, 104.18.39.11
+*   Trying [2a06:98c1:3109::ac40:94f5]:443...
+* Immediate connect fail for 2a06:98c1:3109::ac40:94f5: Network is unreachable
+*   Trying [2606:4700:4406::6812:270b]:443...
+* Immediate connect fail for 2606:4700:4406::6812:270b: Network is unreachable
+*   Trying 172.64.148.245:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1702 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2527 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [80 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=gitlab.com
+*  start date: Jul 29 07:59:14 2025 GMT
+*  expire date: Oct 27 08:59:11 2025 GMT
+*  issuer: C=US; O=Google Trust Services; CN=WE1
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA256
+*   Certificate level 1: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 2: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to contributors.gitlab.com (172.64.148.245) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: contributors.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+< HTTP/1.1 200 OK
+< Date: Fri, 12 Sep 2025 14:42:02 GMT
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 0
+< Connection: keep-alive
+< x-frame-options: SAMEORIGIN
+< x-xss-protection: 0
+< x-content-type-options: nosniff
+< x-permitted-cross-domain-policies: none
+< referrer-policy: strict-origin-when-cross-origin
+< link: </vite/assets/mountVue-DMqQ_0x1.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,</vite/assets/mountVue-CwPlXMM3.css>; rel=preload; as=style; nopush,</vite/assets/application-Dxo21XO1.css>; rel=preload; as=style; nopush
+< vary: Accept
+< etag: W/"46b4820c505f6a1dc659f070d3ed40ee"
+< cache-control: max-age=0, private, must-revalidate
+< set-cookie: contributor_platform_user=false; path=/; samesite=lax; secure
+< x-request-id: ad397eed-ac9d-41fc-93b7-d1aac103b7df
+< x-runtime: 0.005164
+< strict-transport-security: max-age=31536000
+< x-cloud-trace-context: 468ea2830128c8ef2251cc920f798acc;o=1
+< Via: 1.1 google
+< X-Client-Runway-Region: FR
+< cf-cache-status: DYNAMIC
+< Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=GNk5FRP0cZ86uES7AHHaJ5muUCXLSMP7cmFnp2nxogLbkZfPJgLN5OgaColndwanQI5RUxtdCPLSvNSKkPTUUUCmn7qSyrjTEbFFkbWVqX%2BPFKSToLlR3lnO6xDDy8pz0SiYxUvPUU1I"}],"group":"cf-nel","max_age":604800}
+< NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+{ [5 bytes data]
+< Set-Cookie: _contributors_session=AQFzJaO3EuMEkHPIxxOWcZZslenipl6XgCMcfKYms%2Bw09TGweIdJt01bm6Tg3i3ZVK3GEvsLXjg5PjQpsIR2seHKpRw3knlK2IoE9s5ynX%2BSoP49EI6GaPCOH3ikxnt7CfjXs%2BL8V8otcUK%2F6YqCfdJ3pLxjGzh85Q6h2W09O5%2FoTg6xpnLu0pAlYRJJdxlW2qVKelE7X2I9Y%2FYNXqBpk%2F4ZWHmTACMvi%2BgsMhG%2FROBlnGU4KBj0cWbp2z%2FWuJ6KNBFJTz7VAwAVO4spVJGK1xOBIViYa5hAZ7cvav8%3D--pU5JoKAiHChAj8w1--SPGvSdAJnlzElK5fEkIuUA%3D%3D; path=/; secure; httponly; samesite=lax
+< Set-Cookie: _cfuvid=6N2j9cJXdXU0XQeJrScodhO._JFNH3BcztL3Eww4l2Q-1757688122881-0.0.1.1-604800000; path=/; domain=.gitlab.com; HttpOnly; Secure; SameSite=None
+< Server: cloudflare
+< CF-RAY: 97e02b4e9e8be159-MRS
+< 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host contributors.gitlab.com left intact
+HTTP/1.1 200 OK
+Date: Fri, 12 Sep 2025 14:42:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+Connection: keep-alive
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: </vite/assets/mountVue-DMqQ_0x1.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,</vite/assets/mountVue-CwPlXMM3.css>; rel=preload; as=style; nopush,</vite/assets/application-Dxo21XO1.css>; rel=preload; as=style; nopush
+vary: Accept
+etag: W/"46b4820c505f6a1dc659f070d3ed40ee"
+cache-control: max-age=0, private, must-revalidate
+set-cookie: contributor_platform_user=false; path=/; samesite=lax; secure
+x-request-id: ad397eed-ac9d-41fc-93b7-d1aac103b7df
+x-runtime: 0.005164
+strict-transport-security: max-age=31536000
+x-cloud-trace-context: 468ea2830128c8ef2251cc920f798acc;o=1
+Via: 1.1 google
+X-Client-Runway-Region: FR
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=GNk5FRP0cZ86uES7AHHaJ5muUCXLSMP7cmFnp2nxogLbkZfPJgLN5OgaColndwanQI5RUxtdCPLSvNSKkPTUUUCmn7qSyrjTEbFFkbWVqX%2BPFKSToLlR3lnO6xDDy8pz0SiYxUvPUU1I"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Set-Cookie: _contributors_session=AQFzJaO3EuMEkHPIxxOWcZZslenipl6XgCMcfKYms%2Bw09TGweIdJt01bm6Tg3i3ZVK3GEvsLXjg5PjQpsIR2seHKpRw3knlK2IoE9s5ynX%2BSoP49EI6GaPCOH3ikxnt7CfjXs%2BL8V8otcUK%2F6YqCfdJ3pLxjGzh85Q6h2W09O5%2FoTg6xpnLu0pAlYRJJdxlW2qVKelE7X2I9Y%2FYNXqBpk%2F4ZWHmTACMvi%2BgsMhG%2FROBlnGU4KBj0cWbp2z%2FWuJ6KNBFJTz7VAwAVO4spVJGK1xOBIViYa5hAZ7cvav8%3D--pU5JoKAiHChAj8w1--SPGvSdAJnlzElK5fEkIuUA%3D%3D; path=/; secure; httponly; samesite=lax
+Set-Cookie: _cfuvid=6N2j9cJXdXU0XQeJrScodhO._JFNH3BcztL3Eww4l2Q-1757688122881-0.0.1.1-604800000; path=/; domain=.gitlab.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 97e02b4e9e8be159-MRS
+

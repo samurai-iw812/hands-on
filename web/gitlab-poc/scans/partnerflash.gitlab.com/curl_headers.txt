@@ -1,0 +1,83 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host partnerflash.gitlab.com:443 was resolved.
+* IPv6: 2a01:7e01::f03c:93ff:fe61:95d5
+* IPv4: 139.177.177.177
+*   Trying [2a01:7e01::f03c:93ff:fe61:95d5]:443...
+* Immediate connect fail for 2a01:7e01::f03c:93ff:fe61:95d5: Network is unreachable
+*   Trying 139.177.177.177:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1702 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2600 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / x25519 / RSASSA-PSS
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=partnerflash.gitlab.com
+*  start date: Aug 29 21:49:34 2025 GMT
+*  expire date: Nov 27 21:49:33 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=R13
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to partnerflash.gitlab.com (139.177.177.177) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: partnerflash.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [297 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [297 bytes data]
+< HTTP/1.1 302 Found
+< Date: Fri, 12 Sep 2025 14:45:21 GMT
+< Server: Apache
+< X-XSS-Protection: 1; mode=block
+< Set-Cookie: PHPSESSID=sep4kdehiuafsq2fvnhjte07ru; path=/; secure; HttpOnly
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Cache-Control: no-store, no-cache, must-revalidate
+< Pragma: no-cache
+< X-Frame-Options: SAMEORIGIN
+< Location: https://partnerflash.gitlab.com/user/
+< Strict-Transport-Security: max-age=31536000; includeSubDomains
+< X-Content-Type-Options: nosniff
+< Content-Type: text/html; charset=UTF-8
+< 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host partnerflash.gitlab.com left intact
+HTTP/1.1 302 Found
+Date: Fri, 12 Sep 2025 14:45:21 GMT
+Server: Apache
+X-XSS-Protection: 1; mode=block
+Set-Cookie: PHPSESSID=sep4kdehiuafsq2fvnhjte07ru; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+X-Frame-Options: SAMEORIGIN
+Location: https://partnerflash.gitlab.com/user/
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=UTF-8
+

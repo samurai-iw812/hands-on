@@ -1,0 +1,2 @@
+>>> dig A @8.8.8.8
+scim.gitlab.com.	300	IN	A	35.193.81.142

@@ -1,0 +1,2 @@
+>>> dig CNAME @1.1.1.1
+advisories.gitlab.com.	300	IN	CNAME	pages.gitlab.io.

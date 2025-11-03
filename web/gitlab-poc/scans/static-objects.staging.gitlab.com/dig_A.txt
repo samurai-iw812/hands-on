@@ -1,0 +1,3 @@
+>>> dig A @8.8.8.8
+static-objects.staging.gitlab.com. 300 IN A	172.64.146.166
+static-objects.staging.gitlab.com. 300 IN A	104.18.41.90

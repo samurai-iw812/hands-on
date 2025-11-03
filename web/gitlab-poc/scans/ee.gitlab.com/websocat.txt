@@ -1,0 +1,8 @@
+>>> websocat test (10s attempt)
+[INFO  websocat::lints] Auto-inserting the line mode
+[INFO  websocat::ws_client_peer] get_ws_client_peer
+[INFO  websocat::net_peer] Failure during connecting TCP: Network is unreachable (os error 101)
+[INFO  websocat::net_peer] Failure during connecting TCP: Network is unreachable (os error 101)
+[INFO  websocat::net_peer] Connected to TCP 104.18.39.11:443
+websocat: WebSocketError: WebSocketError: Redirected (301 Moved Permanently) to https://gitlab.com/gitlab-org/gitlab
+websocat: error running

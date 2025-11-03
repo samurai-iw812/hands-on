@@ -1,0 +1,76 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host translate.gitlab.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 44.223.149.160
+*   Trying 44.223.149.160:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1699 bytes data]
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [21 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2055 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [79 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / x25519 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=translate.gitlab.com
+*  start date: Aug  8 16:00:50 2025 GMT
+*  expire date: Nov  6 16:00:49 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=E5
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 1: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to translate.gitlab.com (44.223.149.160) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: translate.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [122 bytes data]
+* Request completely sent off
+{ [5 bytes data]
+< HTTP/1.1 302 Found
+< Content-Security-Policy: frame-ancestors 'self'
+< Content-Type: text/html; charset=UTF-8
+< Date: Fri, 12 Sep 2025 14:46:57 GMT
+< Location: https://crowdin.com/project/gitlab-ee
+< Referrer-Policy: origin-when-cross-origin
+< Server: Caddy
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: SAMEORIGIN
+< X-Permitted-Cross-Domain-Policies: none
+< X-Xss-Protection: 1; mode=block
+< 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host translate.gitlab.com left intact
+HTTP/1.1 302 Found
+Content-Security-Policy: frame-ancestors 'self'
+Content-Type: text/html; charset=UTF-8
+Date: Fri, 12 Sep 2025 14:46:57 GMT
+Location: https://crowdin.com/project/gitlab-ee
+Referrer-Policy: origin-when-cross-origin
+Server: Caddy
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block
+

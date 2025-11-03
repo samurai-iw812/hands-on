@@ -1,0 +1,54 @@
+>>> dig +trace
+
+; <<>> DiG 9.20.11-4+b1-Debian <<>> +trace scim.gitlab.com
+;; global options: +cmd
+.			518026	IN	NS	b.root-servers.net.
+.			518026	IN	NS	c.root-servers.net.
+.			518026	IN	NS	d.root-servers.net.
+.			518026	IN	NS	e.root-servers.net.
+.			518026	IN	NS	f.root-servers.net.
+.			518026	IN	NS	g.root-servers.net.
+.			518026	IN	NS	h.root-servers.net.
+.			518026	IN	NS	i.root-servers.net.
+.			518026	IN	NS	j.root-servers.net.
+.			518026	IN	NS	k.root-servers.net.
+.			518026	IN	NS	l.root-servers.net.
+.			518026	IN	NS	m.root-servers.net.
+.			518026	IN	NS	a.root-servers.net.
+.			518026	IN	RRSIG	NS 8 0 518400 20250925050000 20250912040000 46441 . Twf+6ykj2Gf/PxbeGpgclE4A/xeYJbhTbCblSn4sFGAY/qp6b+iwUz8u 3OpVXmaZMgB2STlcp6gX6P9s6mOW79I6REPcHxQDgoDEtOh/J2uKG1o6 rbOxt2h9zzxYtAWeFoNgPKKWRXa+wGBc8DDuqQC7e/jNUSUxIvsUxB7H 4M1kZtqex9tP37OaH3nyWH5IBIJt99Ts6lEMChBpqZBqULThsNJ9bpk/ BINabse9kYQer1cK8mjFGvJX8tdQNsMmKGEhBCEnWnZPa812k02RCnj+ Xa2tXZbA0NkTl+RehR3xCs6FGgCzp1B+aq4V0w9DZL6WoOMbYKOBqFvP XKg64w==
+;; Received 1097 bytes from 192.168.1.1#53(192.168.1.1) in 12 ms
+
+com.			172800	IN	NS	d.gtld-servers.net.
+com.			172800	IN	NS	m.gtld-servers.net.
+com.			172800	IN	NS	e.gtld-servers.net.
+com.			172800	IN	NS	g.gtld-servers.net.
+com.			172800	IN	NS	j.gtld-servers.net.
+com.			172800	IN	NS	b.gtld-servers.net.
+com.			172800	IN	NS	k.gtld-servers.net.
+com.			172800	IN	NS	f.gtld-servers.net.
+com.			172800	IN	NS	l.gtld-servers.net.
+com.			172800	IN	NS	h.gtld-servers.net.
+com.			172800	IN	NS	c.gtld-servers.net.
+com.			172800	IN	NS	a.gtld-servers.net.
+com.			172800	IN	NS	i.gtld-servers.net.
+com.			86400	IN	DS	19718 13 2 8ACBB0CD28F41250A80A491389424D341522D946B0DA0C0291F2D3D7 71D7805A
+com.			86400	IN	RRSIG	DS 8 1 86400 20250925050000 20250912040000 46441 . ZzXHC4Txf1CMUJAjXT8+jz07z+2eiMLaL6CihefT8U6v3wLDe9fJC5/5 8l0x0j3RXr0Rq4ugGnbdy5QVlSHyBY0xPXgIUGsysOCunjJXffZH3/lh 04p6mPac0Ib6QQeepExZxxz3uNLwIO9NM22o1C+iFbo4Ev8Zq1bE4i7w jYCy0GpYNZZeO59+4bjrws3H3eDo7YxhlCxFJ1xdjzw+Fs3NyRqYmoAh 4L64BF+wfAtwkrYsO6tdZVFN0LHCPg8Q+Nnz6gT/eAzKeMHUVG8NM1aJ fx+1i5HxTTe1Y0ohKSxuc/fLnmvWGE4WIPBVPzjCi49KTz79GbK5m6Hw 0t5pYA==
+;; Received 1206 bytes from 192.36.148.17#53(i.root-servers.net) in 236 ms
+
+;; UDP setup with 2001:503:39c1::30#53(2001:503:39c1::30) for scim.gitlab.com failed: network unreachable.
+;; no servers could be reached
+;; UDP setup with 2001:503:39c1::30#53(2001:503:39c1::30) for scim.gitlab.com failed: network unreachable.
+;; no servers could be reached
+;; UDP setup with 2001:503:39c1::30#53(2001:503:39c1::30) for scim.gitlab.com failed: network unreachable.
+gitlab.com.		172800	IN	NS	diva.ns.cloudflare.com.
+gitlab.com.		172800	IN	NS	jermaine.ns.cloudflare.com.
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN NSEC3 1 1 0 - CK0Q3UDG8CEKKAE7RUKPGCT1DVSSH8LL NS SOA RRSIG DNSKEY NSEC3PARAM
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN RRSIG NSEC3 13 2 900 20250916002602 20250908231602 20545 com. IvBBOK7azyUQwVXfIgslgBw4Z6LOEQSR1bZstPsjeWXqxBkNtpHmvVkf B6TPywMB/dnbdDRbOZD1uS7xryQHCw==
+PHGGI7K7SIQRDMHS4S19MO1BJ2A6DMNN.com. 900 IN NSEC3 1 1 0 - PHGH2SUH5GB5UUJL6VCLJO25OI30SQ26 NS DS RRSIG
+PHGGI7K7SIQRDMHS4S19MO1BJ2A6DMNN.com. 900 IN RRSIG NSEC3 13 2 900 20250919020947 20250912005947 20545 com. 9kNK1cV3EN6G+UB2IHW6QE4BHdkUgvteZgCe/fQAAKJcr2lw3fuYGdTF hq6YR4WKKE5EIs4VNKpvjBueSbC1Dw==
+;; Received 721 bytes from 192.31.80.30#53(d.gtld-servers.net) in 72 ms
+
+;; UDP setup with 2803:f800:50::6ca2:c39d#53(2803:f800:50::6ca2:c39d) for scim.gitlab.com failed: network unreachable.
+scim.gitlab.com.	300	IN	A	35.193.81.142
+;; Received 60 bytes from 108.162.192.97#53(diva.ns.cloudflare.com) in 56 ms
+

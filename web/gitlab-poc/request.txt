@@ -1,0 +1,10 @@
+POST /import/url/validate HTTP/1.1
+Host: gitlab.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: application/json, text/plain, */*
+Content-Type: application/x-www-form-urlencoded
+Connection: close
+Content-Length: 15
+
+url=INJECT_HERE
+

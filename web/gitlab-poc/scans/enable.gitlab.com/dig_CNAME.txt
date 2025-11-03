@@ -1,0 +1,2 @@
+>>> dig CNAME @1.1.1.1
+enable.gitlab.com.	300	IN	CNAME	6603eeb6-8fbd-4cbd-b25d-16fe97799f4a.outrch.com.

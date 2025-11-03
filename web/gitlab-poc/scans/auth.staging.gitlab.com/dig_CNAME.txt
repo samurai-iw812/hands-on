@@ -1,0 +1,2 @@
+>>> dig CNAME @1.1.1.1
+auth.staging.gitlab.com. 300	IN	CNAME	staging.gitlab.com.

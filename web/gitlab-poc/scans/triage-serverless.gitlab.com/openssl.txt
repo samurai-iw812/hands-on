@@ -1,0 +1,3 @@
+>>> openssl s_client -servername
+40175322767F0000:error:10080002:BIO routines:BIO_lookup_ex:system lib:../crypto/bio/bio_addr.c:764:No address associated with hostname
+connect:errno=22

@@ -1,0 +1,77 @@
+>>> openssl s_client -servername
+Connecting to 35.202.109.25
+depth=2 C=US, O=Internet Security Research Group, CN=ISRG Root X1
+verify return:1
+depth=1 C=US, O=Let's Encrypt, CN=R11
+verify return:1
+depth=0 CN=campaign-manager.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=campaign-manager.gitlab.com
+   i:C=US, O=Let's Encrypt, CN=R11
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Jul 31 04:29:17 2025 GMT; NotAfter: Oct 29 04:29:16 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=R11
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIF1DCCBLygAwIBAgISBRQRIyCeSK2xRi19nwJmXm+2MA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTEwHhcNMjUwNzMxMDQyOTE3WhcNMjUxMDI5MDQyOTE2WjAmMSQwIgYDVQQD
+ExtjYW1wYWlnbi1tYW5hZ2VyLmdpdGxhYi5jb20wggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQC1PaA6ML+8vrYJW/agGF5akQX/psSjAT+huqlo5WD6fSLg
+UTS9QqDx/tmZyTQJk2L0ZB/8mzUwqH6ZfOix/9CE89Zz3ktaOCv17ZLNdWXHo3FH
+ojVAlyzH1XWPwwjzd5A6l08gPz8XmEqrn83dI/BAcSVhFADRiDze5hU8+H/NLl2d
+h9kVwo0Zu1Vsk5dUSxc//cuJlq1GTa0FV3wWCfBmRy3i73wbVIRD8IG+KFS79U2a
+gYcDTr5c8qAw/g2kPkplB/lJodouq9Ny6RkPrlHja3E/D4vJ8HlBjnooK5CUhMco
+PFjYTT+u91up+U6q1KGTpMuqvvs4yhIVbAJGeCS9AgMBAAGjggLtMIIC6TAOBgNV
+HQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1Ud
+EwEB/wQCMAAwHQYDVR0OBBYEFKf+Q4kplGWTiemC+CF1GERRcH0QMB8GA1UdIwQY
+MBaAFMXPRqTq9MPAemyVxC2wXpIvJuO5MDMGCCsGAQUFBwEBBCcwJTAjBggrBgEF
+BQcwAoYXaHR0cDovL3IxMS5pLmxlbmNyLm9yZy8wgecGA1UdEQSB3zCB3IIgYXBp
+LXN0YWdpbmcuY29tbXVuaXR5LmdpdGxhYi5jb22CGGFwaS5jb21tdW5pdHkuZ2l0
+bGFiLmNvbYIgYXBwLXN0YWdpbmcuY29tbXVuaXR5LmdpdGxhYi5jb22CGGFwcC5j
+b21tdW5pdHkuZ2l0bGFiLmNvbYIbY2FtcGFpZ24tbWFuYWdlci5naXRsYWIuY29t
+gh9nby1zdGFnaW5nLmNvbW11bml0eS5naXRsYWIuY29tgiRtYW5hZ2VyLXN0YWdp
+bmcuY29tbXVuaXR5LmdpdGxhYi5jb20wEwYDVR0gBAwwCjAIBgZngQwBAgEwLgYD
+VR0fBCcwJTAjoCGgH4YdaHR0cDovL3IxMS5jLmxlbmNyLm9yZy81NS5jcmwwggEE
+BgorBgEEAdZ5AgQCBIH1BIHyAPAAdgDd3Mo0ldfhFgXnlTL6x5/4PRxQ39sAOhQS
+dgosrLvIKgAAAZhe82n5AAAEAwBHMEUCIHrkvLXTqmqOsD7LjLI8stMBOCE873R3
+JVKwdDUisxA0AiEAj0DWf2Gi7iLH5R2gTWTQmmKsLTaJqfDJOQES3Ym7JewAdgAa
+BP9J0FQdQK/2oMO/8djEZy9O7O4jQGiYaxdALtyJfQAAAZhe82oFAAAEAwBHMEUC
+IDBsn1Hzsj8ZBRDyLEkZiazwIkyXb+5Nh+SpnIMHpqBhAiEA8dn69/MXgfsiSFPg
+Lwdv5aPXSVy/lRH7zqMqb9okk6UwDQYJKoZIhvcNAQELBQADggEBAElCEJ0jt+pj
+8AApkBZmaN4+PDKh7xSmcZQh0nNSEXrX+svlgCrPhE0Wqpo/5d0w0wioyHDyXDID
+s9EBxEOtcoo3mOumjgm+aU6CXJA2sqiek4QLE7RFA2yA3mSGW9Ut0+0XEyNOfrDy
+qOzCDZ/+pO68vJ8yoNjyORdwQ2Z+BIPdwoYmoee4AoB8fVg6BqeyiHbTYOi49h26
+s2LgZE5TLGYUKkHJ8t+xtnMFMREFsAt2h+hFYOka9ixi3wiRYk6HLSdYcCr6lm2Z
+0UD6I0yk6PMs52zgi22peg5uR0FZqbPjCAYAV0BifkXsJGxb1cjePEsimHfziYkI
+2JYMaxuYylU=
+-----END CERTIFICATE-----
+subject=CN=campaign-manager.gitlab.com
+issuer=C=US, O=Let's Encrypt, CN=R11
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: rsa_pss_rsae_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3351 bytes and written 1773 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE

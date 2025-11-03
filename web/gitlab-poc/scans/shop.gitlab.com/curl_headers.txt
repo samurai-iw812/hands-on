@@ -1,0 +1,111 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host shop.gitlab.com:443 was resolved.
+* IPv6: 2606:4700:20::681a:779, 2606:4700:20::681a:679, 2606:4700:20::ac43:463b
+* IPv4: 104.26.7.121, 172.67.70.59, 104.26.6.121
+*   Trying [2606:4700:20::681a:779]:443...
+* Immediate connect fail for 2606:4700:20::681a:779: Network is unreachable
+*   Trying [2606:4700:20::681a:679]:443...
+* Immediate connect fail for 2606:4700:20::681a:679: Network is unreachable
+*   Trying [2606:4700:20::ac43:463b]:443...
+* Immediate connect fail for 2606:4700:20::ac43:463b: Network is unreachable
+*   Trying 104.26.7.121:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1694 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2523 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [80 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=shop.gitlab.com
+*  start date: Jul 20 02:57:17 2025 GMT
+*  expire date: Oct 18 03:57:15 2025 GMT
+*  issuer: C=US; O=Google Trust Services; CN=WE1
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA256
+*   Certificate level 1: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 2: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to shop.gitlab.com (104.26.7.121) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: shop.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+< HTTP/1.1 200 OK
+< Date: Fri, 12 Sep 2025 14:47:45 GMT
+< Content-Type: text/html; charset=utf-8
+< Connection: keep-alive
+< x-frame-options: SAMEORIGIN
+< x-xss-protection: 0
+< x-content-type-options: nosniff
+< x-permitted-cross-domain-policies: none
+< referrer-policy: strict-origin-when-cross-origin
+< link: <https://production-assets.brilliantmade.com/assets/codeVersion-rtmfxMFP.js>; rel=preload; as=script; crossorigin=anonymous; nopush,<https://production-assets.brilliantmade.com/assets/fonts-C5r_jTbI.css>; rel=preload; as=style; nopush,<https://production-assets.brilliantmade.com/assets/tailwind_client-BEdMkk5n.css>; rel=preload; as=style; nopush,<https://production-assets.brilliantmade.com/assets/globalAhoy-CYDXmVh-.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,<https://production-assets.brilliantmade.com/assets/alpine-1G09a6bf.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,<https://production-assets.brilliantmade.com/assets/clientEntry-BvD2xnAa.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,<https://production-assets.brilliantmade.com/assets/clientEntry-CryODv0x.css>; rel=preload; as=style; nopush,<https://production-assets.brilliantmade.com/assets/reactComponentRegistry-P_QljmuU.css>; rel=preload; as=style; nopush
+< vary: Accept
+< Cache-Control: max-age=0, private, must-revalidate
+{ [5 bytes data]
+< Set-Cookie: ahoy_visitor=8c1afcaf-84e8-4669-aae6-64f888cebf3b; path=/; expires=Sun, 12 Sep 2027 14:47:44 GMT; SameSite=Lax
+< Set-Cookie: ahoy_visit=c7bc3930-67be-40f0-9631-452a78d7a801; path=/; expires=Fri, 12 Sep 2025 18:47:44 GMT; SameSite=Lax
+< Set-Cookie: _brilliant_session=ac0f21469694cfcd8cc0b98d0eff84aa; domain=gitlab.com; path=/; secure; HttpOnly
+< x-request-id: 05048c1e-3ae4-4b31-b987-4c7f3b059e0a
+< x-runtime: 0.455929
+< cf-cache-status: DYNAMIC
+< Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=WIC%2BMsGaAj19nHYizoS4n8jXoDKWZoQS3q2%2FEkUCbhwW36GjDe8dnK%2Fn2U84d7JaR6GzSugqLSIcu%2F%2FjnWfa%2BeZfIoZFKVtfsIWKa%2BMdsSPI6VZVlY17A5kqsleiGmw3qQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+< NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Server: cloudflare
+< CF-RAY: 97e033a729b029c2-MRS
+< server-timing: cfL4;desc="?proto=TCP&rtt=52235&min_rtt=52206&rtt_var=19636&sent=6&recv=7&lost=0&retrans=0&sent_bytes=3923&recv_bytes=1881&delivery_rate=82373&cwnd=252&unsent_bytes=0&cid=ea1629e2b9d336c9&ts=905&x=0"
+< 
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+* Connection #0 to host shop.gitlab.com left intact
+HTTP/1.1 200 OK
+Date: Fri, 12 Sep 2025 14:47:45 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://production-assets.brilliantmade.com/assets/codeVersion-rtmfxMFP.js>; rel=preload; as=script; crossorigin=anonymous; nopush,<https://production-assets.brilliantmade.com/assets/fonts-C5r_jTbI.css>; rel=preload; as=style; nopush,<https://production-assets.brilliantmade.com/assets/tailwind_client-BEdMkk5n.css>; rel=preload; as=style; nopush,<https://production-assets.brilliantmade.com/assets/globalAhoy-CYDXmVh-.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,<https://production-assets.brilliantmade.com/assets/alpine-1G09a6bf.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,<https://production-assets.brilliantmade.com/assets/clientEntry-BvD2xnAa.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,<https://production-assets.brilliantmade.com/assets/clientEntry-CryODv0x.css>; rel=preload; as=style; nopush,<https://production-assets.brilliantmade.com/assets/reactComponentRegistry-P_QljmuU.css>; rel=preload; as=style; nopush
+vary: Accept
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: ahoy_visitor=8c1afcaf-84e8-4669-aae6-64f888cebf3b; path=/; expires=Sun, 12 Sep 2027 14:47:44 GMT; SameSite=Lax
+Set-Cookie: ahoy_visit=c7bc3930-67be-40f0-9631-452a78d7a801; path=/; expires=Fri, 12 Sep 2025 18:47:44 GMT; SameSite=Lax
+Set-Cookie: _brilliant_session=ac0f21469694cfcd8cc0b98d0eff84aa; domain=gitlab.com; path=/; secure; HttpOnly
+x-request-id: 05048c1e-3ae4-4b31-b987-4c7f3b059e0a
+x-runtime: 0.455929
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=WIC%2BMsGaAj19nHYizoS4n8jXoDKWZoQS3q2%2FEkUCbhwW36GjDe8dnK%2Fn2U84d7JaR6GzSugqLSIcu%2F%2FjnWfa%2BeZfIoZFKVtfsIWKa%2BMdsSPI6VZVlY17A5kqsleiGmw3qQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Server: cloudflare
+CF-RAY: 97e033a729b029c2-MRS
+server-timing: cfL4;desc="?proto=TCP&rtt=52235&min_rtt=52206&rtt_var=19636&sent=6&recv=7&lost=0&retrans=0&sent_bytes=3923&recv_bytes=1881&delivery_rate=82373&cwnd=252&unsent_bytes=0&cid=ea1629e2b9d336c9&ts=905&x=0"
+

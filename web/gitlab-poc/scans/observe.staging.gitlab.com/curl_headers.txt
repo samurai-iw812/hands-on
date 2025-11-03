@@ -1,0 +1,78 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host observe.staging.gitlab.com:443 was resolved.
+* IPv6: 2606:4700:440b::6812:2b4b, 2606:4700:4403::ac40:90b5
+* IPv4: 104.18.43.75, 172.64.144.181
+*   Trying [2606:4700:440b::6812:2b4b]:443...
+* Immediate connect fail for 2606:4700:440b::6812:2b4b: Network is unreachable
+*   Trying [2606:4700:4403::ac40:90b5]:443...
+* Immediate connect fail for 2606:4700:4403::ac40:90b5: Network is unreachable
+*   Trying 104.18.43.75:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1705 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2573 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [79 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=observe.staging.gitlab.com
+*  start date: Jul 22 21:50:38 2025 GMT
+*  expire date: Oct 20 22:50:23 2025 GMT
+*  issuer: C=US; O=Google Trust Services; CN=WE1
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA256
+*   Certificate level 1: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 2: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to observe.staging.gitlab.com (104.18.43.75) port 443
+* using HTTP/1.x
+} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: observe.staging.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+< HTTP/1.1 404 Not Found
+< Date: Fri, 12 Sep 2025 14:45:38 GMT
+< Content-Type: text/plain; charset=utf-8
+< Content-Length: 19
+< Connection: keep-alive
+< x-content-type-options: nosniff
+< cf-cache-status: DYNAMIC
+< Server: cloudflare
+< CF-RAY: 97e030924b7be288-MRS
+< 
+  0    19    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+* Connection #0 to host observe.staging.gitlab.com left intact
+HTTP/1.1 404 Not Found
+Date: Fri, 12 Sep 2025 14:45:38 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 19
+Connection: keep-alive
+x-content-type-options: nosniff
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 97e030924b7be288-MRS
+

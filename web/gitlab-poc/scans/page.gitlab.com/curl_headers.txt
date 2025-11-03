@@ -1,0 +1,77 @@
+>>> curl -I --http1.1 -vk
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host page.gitlab.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 104.17.74.206, 104.17.72.206, 104.17.70.206, 104.17.71.206, 104.17.73.206
+*   Trying 104.17.74.206:443...
+* ALPN: curl offers http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1694 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [110 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [2038 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [115 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [37 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-ECDSA-CHACHA20-POLY1305 / x25519 / id-ecPublicKey
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=page.gitlab.com
+*  start date: Jul 19 23:59:26 2025 GMT
+*  expire date: Oct 17 23:59:25 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=E5
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 1: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to page.gitlab.com (104.17.74.206) port 443
+* using HTTP/1.x
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0} [5 bytes data]
+> HEAD / HTTP/1.1
+> Host: page.gitlab.com
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+< HTTP/1.1 302 Found
+< Date: Fri, 12 Sep 2025 14:45:45 GMT
+< Content-Type: text/html; charset=UTF-8
+< Connection: keep-alive
+< Location: https://about.gitlab.com/events
+< Cache-Control: s-maxage=60,stale-while-revalidate=5
+< X-Content-Type-Options: nosniff
+< Vary: Accept-Encoding
+< Set-Cookie: BIGipServerab13web-nginx-app_https=!UVWBQ0WV7MwyGzoJ6TMJ3DVKYUEYXq+iJfQp3jI4e7knOxroOAkrFr5aC6GWzNPuySJ6MpKJBEoyng==; Path=/; Version=1; Secure; Httponly
+< cf-cache-status: DYNAMIC
+< Set-Cookie: __cf_bm=dSmeawgYR2j8tEGlq6wj9wgQQhXmV5wjtPyF07dA1Sw-1757688345-1.0.1.1-IgnBiTfvvbZwojJQsBlXXYHg..gndvZ3_GkXtGFVAsuttr9ECOmQUzwRiLUwyTMz65O2gliv5iBy0wMj5iUdJaCQfL_4SGqw7epG.D5UEjk; path=/; expires=Fri, 12-Sep-25 15:15:45 GMT; domain=.page.gitlab.com; HttpOnly; Secure; SameSite=None
+< Server: cloudflare
+< CF-RAY: 97e030bbf92de1fd-MRS
+< 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host page.gitlab.com left intact
+HTTP/1.1 302 Found
+Date: Fri, 12 Sep 2025 14:45:45 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Location: https://about.gitlab.com/events
+Cache-Control: s-maxage=60,stale-while-revalidate=5
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+Set-Cookie: BIGipServerab13web-nginx-app_https=!UVWBQ0WV7MwyGzoJ6TMJ3DVKYUEYXq+iJfQp3jI4e7knOxroOAkrFr5aC6GWzNPuySJ6MpKJBEoyng==; Path=/; Version=1; Secure; Httponly
+cf-cache-status: DYNAMIC
+Set-Cookie: __cf_bm=dSmeawgYR2j8tEGlq6wj9wgQQhXmV5wjtPyF07dA1Sw-1757688345-1.0.1.1-IgnBiTfvvbZwojJQsBlXXYHg..gndvZ3_GkXtGFVAsuttr9ECOmQUzwRiLUwyTMz65O2gliv5iBy0wMj5iUdJaCQfL_4SGqw7epG.D5UEjk; path=/; expires=Fri, 12-Sep-25 15:15:45 GMT; domain=.page.gitlab.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 97e030bbf92de1fd-MRS
+

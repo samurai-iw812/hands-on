@@ -1,0 +1,2 @@
+>>> dig CNAME @1.1.1.1
+shop.gitlab.com.	300	IN	CNAME	app.brilliantmade.com.

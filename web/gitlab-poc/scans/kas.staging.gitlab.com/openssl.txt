@@ -1,0 +1,85 @@
+>>> openssl s_client -servername
+Connecting to 172.65.255.193
+depth=2 C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication Root R46
+verify return:1
+depth=1 C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA DV R36
+verify return:1
+depth=0 CN=kas.staging.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=kas.staging.gitlab.com
+   i:C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA DV R36
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Aug 15 00:00:00 2025 GMT; NotAfter: Sep 13 23:59:59 2026 GMT
+ 1 s:C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA DV R36
+   i:C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication Root R46
+   a:PKEY: RSA, 3072 (bit); sigalg: sha384WithRSAEncryption
+   v:NotBefore: Mar 22 00:00:00 2021 GMT; NotAfter: Mar 21 23:59:59 2036 GMT
+ 2 s:C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication Root R46
+   i:C=GB, ST=Greater Manchester, L=Salford, O=Comodo CA Limited, CN=AAA Certificate Services
+   a:PKEY: RSA, 4096 (bit); sigalg: sha384WithRSAEncryption
+   v:NotBefore: Mar 22 00:00:00 2021 GMT; NotAfter: Dec 31 23:59:59 2028 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGpDCCBQygAwIBAgIRAMnpbRzk/Pb2DaHGJXIsVjgwDQYJKoZIhvcNAQELBQAw
+YDELMAkGA1UEBhMCR0IxGDAWBgNVBAoTD1NlY3RpZ28gTGltaXRlZDE3MDUGA1UE
+AxMuU2VjdGlnbyBQdWJsaWMgU2VydmVyIEF1dGhlbnRpY2F0aW9uIENBIERWIFIz
+NjAeFw0yNTA4MTUwMDAwMDBaFw0yNjA5MTMyMzU5NTlaMCExHzAdBgNVBAMTFmth
+cy5zdGFnaW5nLmdpdGxhYi5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+AoIBAQCodL00nB5psw2by1X7QWeRmONzzTOQ49Cm70iOUxLhot1No6cksMPMGcAK
+dsm9p2QTxyHTu2h/LlybYK+O1lZVYqbzIETjvekVevKjBK+CA8kzE7Xqv7BOEYko
+qhwQwC6rWeanFfk20xQq6sINuVGhvG/Zjv7J3XAkOqa5IBLaOO+9zpaspN5+UZyC
+pZcYh+88W8tTyUVAWtYuP434jjEh6d4X4kKcHgnrkZ+DaVo+wqy8GhRu/2YExWGI
+tfiZkIXG+lnpjoHxvxt/0o5cNVEcZvH36dTFyMfCHTziIJTepVGsL5DIZy+AwSg0
++d8VY8mehdEBmoA5Ylpv1QeK2T5VAgMBAAGjggMWMIIDEjAfBgNVHSMEGDAWgBRo
+wBIWGA6vzvaHpjJXo0ZRXcsHJzAdBgNVHQ4EFgQUl2CoAzxOHfHeS4SCVUi5ThtP
+NyMwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYB
+BQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGyMQECAgcwJTAjBggr
+BgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMIGEBggr
+BgEFBQcBAQR4MHYwTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jcnQuc2VjdGlnby5jb20v
+U2VjdGlnb1B1YmxpY1NlcnZlckF1dGhlbnRpY2F0aW9uQ0FEVlIzNi5jcnQwIwYI
+KwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMD0GA1UdEQQ2MDSCFmth
+cy5zdGFnaW5nLmdpdGxhYi5jb22CGnd3dy5rYXMuc3RhZ2luZy5naXRsYWIuY29t
+MIIBgAYKKwYBBAHWeQIEAgSCAXAEggFsAWoAdwDYCVU7lE96/8gWGW+UT4WrsPj8
+XodVJg8V0S5yu0VLFAAAAZirF1R8AAAEAwBIMEYCIQDSEFee+XPo5yIhFKxvzdWj
+MbS+OfMJll9bt8Xa4i/+YwIhAKETk7AA843DhsoVpjHB73VEn9kPNZ9LWXGrDuhU
+1tSyAHYArKswcGzr7IQx9BPS9JFfER5CJEOx8qaMTzwrO6ceAsMAAAGYqxdUSAAA
+BAMARzBFAiEAmIt/kZ/rVt7oM7vEiK6XV84Z+lbc6D6EJUG4/WUa8nUCIDnMmeij
+07o0Gqaeu5MGgNkj+TcCWhF4U3MzU8xNjeZ5AHcA1219ENGn9XfCx+lf1wC/+YLJ
+M1pl4dCzAXMXwMjFaXcAAAGYqxdUVQAABAMASDBGAiEAxI9Cr+sBWXPwXRggKeIq
+WJ5lh43e1k+k9bYApAebMKwCIQCC5biddxF0pqzdqgyhUV9vv/t1dPCV6DSjgcm0
+wtOmbzANBgkqhkiG9w0BAQsFAAOCAYEAGyQEnD66+MTKA/m5COIwgHJwr8QAqouQ
+hevnPAAYztepG5awK1lPACLfCbrDlmnU0VzT6H0m/z6yTYn0q1C/K6tTikVmIP2y
+tNe9XdLzJ5gENkB85gLXLLmivDZ1yJJILQcjksWUqFMVAPhUPq9dtAAVlrA/8FLr
+KGrey0kZ+hXAl+qW92ncZbjUxOgLfn8anMesMcIVc1QtJFhccWgbF/to2x3UvLsd
+QUvr2XvSAOGb7zM5UIieMtWvv/PuxNVMwpDFEJvUdX12QnbsuXE9vxmM40wxT4YF
+3fH/QNV0QRSLpgRDY7hb7adkpEBIIF+fLC3wBHqw8fKhmisMHb0twG9kd2sm9hdv
+kplZ7//wU4uBUTdFvm2u5cJfBhctWY52zYj2QeHote3+U02JuBaJS1X9XeoDb3mz
+RLfdnJJgG7TXvmYYkQZ7cmGWnbugJDSCuONVwrx5yHY2EniTc3nz9LneFih00UGr
+nvSEyIf29Hu8uyOf+r10DFtRbF6rnzXb
+-----END CERTIFICATE-----
+subject=CN=kas.staging.gitlab.com
+issuer=C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA DV R36
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: rsa_pss_rsae_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 5295 bytes and written 1771 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE

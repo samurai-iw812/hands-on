@@ -1,0 +1,4 @@
+>>> dig A @8.8.8.8
+university.gitlab.com.	300	IN	CNAME	www.thoughtindustriesproxy.com.
+www.thoughtindustriesproxy.com.	300 IN	A	104.18.2.172
+www.thoughtindustriesproxy.com.	300 IN	A	104.18.3.172

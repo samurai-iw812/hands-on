@@ -1,0 +1,5 @@
+>>> dig A @8.8.8.8
+partners.gitlab.com.	300	IN	CNAME	technologypartners-gitlab.partner-experience.com.
+technologypartners-gitlab.partner-experience.com. 60 IN	CNAME prod.azw2k8-public.impartner.io.
+prod.azw2k8-public.impartner.io. 60 IN	CNAME	prod.usms.impartner.io.
+prod.usms.impartner.io.	60	IN	A	20.51.97.214

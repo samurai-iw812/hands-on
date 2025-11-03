@@ -1,0 +1,72 @@
+>>> openssl s_client -servername
+Connecting to 52.42.24.13
+depth=2 C=US, O=Internet Security Research Group, CN=ISRG Root X1
+verify return:1
+depth=1 C=US, O=Let's Encrypt, CN=R10
+verify return:1
+depth=0 CN=enable.gitlab.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=enable.gitlab.com
+   i:C=US, O=Let's Encrypt, CN=R10
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Jul 28 08:22:18 2025 GMT; NotAfter: Oct 26 08:22:17 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=R10
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIE/jCCA+agAwIBAgISBQl9vZK6CTpqK2SnyXWcr6YrMA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTAwHhcNMjUwNzI4MDgyMjE4WhcNMjUxMDI2MDgyMjE3WjAcMRowGAYDVQQD
+ExFlbmFibGUuZ2l0bGFiLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+ggEBAMgseKz69DVjZcMrLmr8BkHcm4AkGv/eLZHwujrM+G77+nk4kNBA5yhiPcoU
+7+AASgMd+lk/bOTbJ7ny2xBj2kFv3mx3A+tghkL6g6vqnBNs2OtYgRpREWpX2iTr
+4F4MFytiehED24CR64u1mwYfYYfQ4PlFEZqUCl6ErmhIcALHj+YBYfMKn8MtvhTz
+F7vGTVOaqgX8pZ85o6KUIdO+hSqTYXenUkLXaXMJXZgpkLBbsdPZlEEb0+dBmh6h
+cdDKoXVi7o7+BQ6uXQrqkpFHvTRlTVjyRXtWiYpp7kVb2ASfXz2kTyVKCun5Qove
+J3JAzdTPMrzLuDb/pqxDZfjZnXUCAwEAAaOCAiEwggIdMA4GA1UdDwEB/wQEAwIF
+oDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAd
+BgNVHQ4EFgQUvFXHtm10bt+CkZJYFt2gfciE8x8wHwYDVR0jBBgwFoAUu7zDR6Xk
+vKnGw6RyDBCNojXhyOgwMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRw
+Oi8vcjEwLmkubGVuY3Iub3JnLzAcBgNVHREEFTATghFlbmFibGUuZ2l0bGFiLmNv
+bTATBgNVHSAEDDAKMAgGBmeBDAECATAuBgNVHR8EJzAlMCOgIaAfhh1odHRwOi8v
+cjEwLmMubGVuY3Iub3JnLzQ0LmNybDCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2
+ABoE/0nQVB1Ar/agw7/x2MRnL07s7iNAaJhrF0Au3Il9AAABmFBVrdsAAAQDAEcw
+RQIgD3H2FRLr+zRFhi+FKPUWUK9ahIWGGHAJVOH0wYl5vyUCIQDq67DqyXfmdcFq
+Vg6xDiGbhi72WJZb21sE3tDcJr9mOgB2ABLxTjS9U3JMhAYZw48/ehP457Vih4ic
+bTAFhOvlhiY6AAABmFBVtVMAAAQDAEcwRQIgTJaTmXmV49fzc0ro9b0nY1emRgn3
+7MlTLQIRvP6p1BICIQC/AbfdZqSUNrqy07bYvBwGJkckUD/A1EA6DCis600d1TAN
+BgkqhkiG9w0BAQsFAAOCAQEAnHozUc2YymYv7orNYK+2aF6k1iYY/xQG8MIjIHeU
+742+xiPvrKg/cfgH/9SQBGlt3zz+tSsfL4PRbS9OT0oNPqP5eJablwKn/4sI1WfO
+51oQjmEfLs9tNn1BxUI3wyXt70d24Aj/P3++Qt4D4OIEoYxdB8PocSCNonA332iL
+JVpZVSmKCl2vV8ev3+PdulWy8+DEK2s8ivTQjJz/EGRXGrbDIB/n73+f4Pj7Inea
+QNoF180CSKj6QBdxUOpiLkpT82Jm4G+zAxc+0uVrLgAymruz6Hefio7K+BBROKfG
+pCNEct5qDmP1SM2jIz3xP1YEB17IF6EJaXXM6gjxqjob2Q==
+-----END CERTIFICATE-----
+subject=CN=enable.gitlab.com
+issuer=C=US, O=Let's Encrypt, CN=R10
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: rsa_pss_rsae_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3136 bytes and written 1766 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE

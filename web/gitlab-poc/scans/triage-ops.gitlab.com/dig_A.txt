@@ -1,0 +1,2 @@
+>>> dig A @8.8.8.8
+triage-ops.gitlab.com.	300	IN	A	34.136.106.117

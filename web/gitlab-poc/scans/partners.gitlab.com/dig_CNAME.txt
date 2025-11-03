@@ -1,0 +1,2 @@
+>>> dig CNAME @1.1.1.1
+partners.gitlab.com.	300	IN	CNAME	technologypartners-gitlab.partner-experience.com.
