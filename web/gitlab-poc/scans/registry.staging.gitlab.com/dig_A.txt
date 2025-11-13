@@ -1,2 +1,0 @@
->>> dig A @8.8.8.8
-registry.staging.gitlab.com. 300 IN	A	35.237.188.172

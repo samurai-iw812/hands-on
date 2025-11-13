@@ -1,2 +1,0 @@
-kas.cell-c01j2gdw0zfdafxr6.cells.gitlab.com. 300 IN A 172.64.147.247
-kas.cell-c01j2gdw0zfdafxr6.cells.gitlab.com. 300 IN A 104.18.40.9

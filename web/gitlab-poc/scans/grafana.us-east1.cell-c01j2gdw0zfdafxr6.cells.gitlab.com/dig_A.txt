@@ -1,3 +1,0 @@
->>> dig A @8.8.8.8
-grafana.us-east1.cell-c01j2gdw0zfdafxr6.cells.gitlab.com. 300 IN A 104.18.40.9
-grafana.us-east1.cell-c01j2gdw0zfdafxr6.cells.gitlab.com. 300 IN A 172.64.147.247

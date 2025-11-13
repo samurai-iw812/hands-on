@@ -1,3 +1,0 @@
->>> dig A @8.8.8.8
-customers.staging-ref.gitlab.com. 300 IN A	104.18.35.3
-customers.staging-ref.gitlab.com. 300 IN A	172.64.152.253

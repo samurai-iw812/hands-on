@@ -1,2 +1,0 @@
->>> dig A @8.8.8.8
-cell-c01j2gdw0zfdafxr6.cells.gitlab.com. 300 IN	A 172.65.165.13

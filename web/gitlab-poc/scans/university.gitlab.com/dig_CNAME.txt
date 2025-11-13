@@ -1,2 +1,0 @@
->>> dig CNAME @1.1.1.1
-university.gitlab.com.	300	IN	CNAME	www.thoughtindustriesproxy.com.

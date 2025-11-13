@@ -1,3 +1,0 @@
->>> dig A @8.8.8.8
-forum.gitlab.com.	300	IN	CNAME	gitlab.hosted-by-discourse.com.
-gitlab.hosted-by-discourse.com.	156 IN	A	184.105.99.75

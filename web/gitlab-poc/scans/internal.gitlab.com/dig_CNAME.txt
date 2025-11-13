@@ -1,2 +1,0 @@
->>> dig CNAME @1.1.1.1
-internal.gitlab.com.	300	IN	CNAME	internal-handbook.gitlab.io.

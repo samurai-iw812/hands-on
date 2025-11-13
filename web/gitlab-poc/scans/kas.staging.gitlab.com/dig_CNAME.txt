@@ -1,2 +1,0 @@
->>> dig CNAME @1.1.1.1
-kas.staging.gitlab.com.	300	IN	CNAME	3020c20a605540379bd8fa0716df011b.pacloudflare.com.

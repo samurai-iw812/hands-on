@@ -1,2 +1,0 @@
->>> dig A @8.8.8.8
-registry.geo.staging-ref.gitlab.com. 300 IN A	34.65.51.8

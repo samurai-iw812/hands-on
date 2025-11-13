@@ -1,2 +1,0 @@
->>> dig A @8.8.8.8
-analytics.gitlab.com.	300	IN	A	34.54.57.52

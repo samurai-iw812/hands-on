@@ -1,3 +1,0 @@
->>> dig A @8.8.8.8
-translate.gitlab.com.	300	IN	CNAME	cname.crowdin.com.
-cname.crowdin.com.	300	IN	A	44.223.149.160

@@ -1,6 +1,0 @@
->>> websocat test (10s attempt)
-[INFO  websocat::lints] Auto-inserting the line mode
-[INFO  websocat::ws_client_peer] get_ws_client_peer
-[INFO  websocat::net_peer] Connected to TCP 35.193.81.142:443
-websocat: WebSocketError: WebSocketError: Redirected (307 Temporary Redirect) to /app/
-websocat: error running

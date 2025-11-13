@@ -1,2 +1,0 @@
->>> dig CNAME @1.1.1.1
-content.gitlab.com.	300	IN	CNAME	gitlab.cpsu2.highspot.com.

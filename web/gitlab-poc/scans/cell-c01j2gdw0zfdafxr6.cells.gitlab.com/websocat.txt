@@ -1,6 +1,0 @@
->>> websocat test (10s attempt)
-[INFO  websocat::lints] Auto-inserting the line mode
-[INFO  websocat::ws_client_peer] get_ws_client_peer
-[INFO  websocat::net_peer] Connected to TCP 172.65.165.13:443
-websocat: WebSocketError: WebSocketError: Received unexpected status code (400 Bad Request)
-websocat: error running

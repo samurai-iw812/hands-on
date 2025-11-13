@@ -1,2 +1,0 @@
->>> dig CNAME @1.1.1.1
-ir.gitlab.com.		300	IN	CNAME	gitlab2024ir-farm.q4web.com.

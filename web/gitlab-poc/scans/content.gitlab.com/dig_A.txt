@@ -1,7 +1,0 @@
->>> dig A @8.8.8.8
-content.gitlab.com.	300	IN	CNAME	gitlab.cpsu2.highspot.com.
-gitlab.cpsu2.highspot.com. 300	IN	CNAME	d1tafvl2zmllgk.cloudfront.net.
-d1tafvl2zmllgk.cloudfront.net. 60 IN	A	108.159.102.45
-d1tafvl2zmllgk.cloudfront.net. 60 IN	A	108.159.102.16
-d1tafvl2zmllgk.cloudfront.net. 60 IN	A	108.159.102.6
-d1tafvl2zmllgk.cloudfront.net. 60 IN	A	108.159.102.2

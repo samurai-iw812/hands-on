@@ -1,7 +1,0 @@
->>> dig A @8.8.8.8
-enable.gitlab.com.	300	IN	CNAME	6603eeb6-8fbd-4cbd-b25d-16fe97799f4a.outrch.com.
-6603eeb6-8fbd-4cbd-b25d-16fe97799f4a.outrch.com. 600 IN	CNAME app1f.outrch.com.
-app1f.outrch.com.	300	IN	CNAME	app1f.portal.outreach.io.
-app1f.portal.outreach.io. 60	IN	A	52.34.88.86
-app1f.portal.outreach.io. 60	IN	A	52.42.110.212
-app1f.portal.outreach.io. 60	IN	A	52.42.24.13

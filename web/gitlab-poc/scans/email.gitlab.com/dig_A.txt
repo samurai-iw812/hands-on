@@ -1,7 +1,0 @@
->>> dig A @8.8.8.8
-email.gitlab.com.	300	IN	CNAME	mkto-ab130188.com.
-mkto-ab130188.com.	300	IN	A	104.17.74.206
-mkto-ab130188.com.	300	IN	A	104.17.73.206
-mkto-ab130188.com.	300	IN	A	104.17.70.206
-mkto-ab130188.com.	300	IN	A	104.17.72.206
-mkto-ab130188.com.	300	IN	A	104.17.71.206

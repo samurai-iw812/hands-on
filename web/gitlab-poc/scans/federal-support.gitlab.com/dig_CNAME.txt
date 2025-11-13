@@ -1,2 +1,0 @@
->>> dig CNAME @1.1.1.1
-federal-support.gitlab.com. 300	IN	CNAME	gitlab-federal-support.zendesk.com.

@@ -1,7 +1,0 @@
->>> dig A @8.8.8.8
-status.gitlab.com.	300	IN	CNAME	34754878.hostedstatus.com.
-34754878.hostedstatus.com. 143	IN	CNAME	d2c9567qmz0pih.cloudfront.net.
-d2c9567qmz0pih.cloudfront.net. 60 IN	A	108.159.120.38
-d2c9567qmz0pih.cloudfront.net. 60 IN	A	108.159.120.9
-d2c9567qmz0pih.cloudfront.net. 60 IN	A	108.159.120.94
-d2c9567qmz0pih.cloudfront.net. 60 IN	A	108.159.120.56

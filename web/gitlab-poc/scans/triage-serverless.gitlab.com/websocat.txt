@@ -1,5 +1,0 @@
->>> websocat test (10s attempt)
-[INFO  websocat::lints] Auto-inserting the line mode
-[INFO  websocat::ws_client_peer] get_ws_client_peer
-websocat: WebSocketError: I/O failure
-websocat: error running

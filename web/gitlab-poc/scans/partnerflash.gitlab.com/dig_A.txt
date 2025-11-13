@@ -1,3 +1,0 @@
->>> dig A @8.8.8.8
-partnerflash.gitlab.com. 300	IN	CNAME	gitlab.portal.impartner.co.uk.
-gitlab.portal.impartner.co.uk. 300 IN	A	139.177.177.177
